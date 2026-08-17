@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A626BF8494A18B8C367C3F5 /* CoverPageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E59C97C62DA18D6A3BE7D3 /* CoverPageEditorView.swift */; };
+		20E5EE98C667BBA1C57A655D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CEE8C55A69E87E63D6A264D3 /* Localizable.xcstrings */; };
+		3466C83BFA2F4243F3406139 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F0A6016152878A6A88651 /* PDFGenerator.swift */; };
+		3B70EF8090F7C97AFC3B0A26 /* FaxTransmissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D205297BB02123B2F0976 /* FaxTransmissionService.swift */; };
+		3C214066F508EA1623D010A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3623239C2852C9AEBBB6E543 /* Assets.xcassets */; };
+		3D30D691FB830E9267DA38D5 /* SignaturePadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C59FD7A49333D62B88C9D /* SignaturePadView.swift */; };
+		41B876DA6A1A83A95627998A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68E78C8F4126CAAF514377 /* AppState.swift */; };
+		44532DECE62529894BD44375 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407A62E0CF3D6A540954B75 /* MainTabView.swift */; };
+		4FE51D9D5FF20FFD2126FEF9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D14280A1DC8EFB949416E /* SettingsView.swift */; };
+		5D8AE26A2114B07086EBA7E2 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06BCD2D603CF6811999B67B /* CountryPickerView.swift */; };
+		5E0162D4638282E49C5D779D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA974FF915D64DE95334F86D /* AppTheme.swift */; };
+		7896FB24418D91B08D303E66 /* DocumentScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EACCF73031B6BB0F25F1E5 /* DocumentScannerCoordinator.swift */; };
+		87BC457547ACEE39BEBECA8C /* ImageFilterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA814AEDDC98CFFEBD7A9D40 /* ImageFilterUtility.swift */; };
+		8E34A2C311C03804D3B68C55 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42A260F60AC9E561B706F9 /* HistoryListView.swift */; };
+		8EA193DCCE48F12391413AF1 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854B9CF1AF14088391C4C876 /* StoreManager.swift */; };
+		94643108B10CEFBEE9CE1700 /* DocumentEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B2D0A5739A2A7BAF84E262 /* DocumentEditorView.swift */; };
+		B07E4FE98D39AC96787669CE /* CountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB294365222328BAA290C0 /* CountryManager.swift */; };
+		B2F74B471CC93291E6AD56E0 /* FaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652286DDB0DC5D310F17B42 /* FaxApp.swift */; };
+		C25B597EA19550398AB8CA38 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A9558D246554AD89B84366 /* PhoneFormatter.swift */; };
+		C495F2E47E69436C22B4947D /* SendFaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46AF21652EB648470B4B700 /* SendFaxView.swift */; };
+		CD4650CAB2DD7EC26E4C1142 /* FaxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66ED91F6DF046EF38B67042 /* FaxModels.swift */; };
+		D34DBD6848F84719CA863A27 /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873B7C34C0FC6662B10D6A39 /* ContactsListView.swift */; };
+		DCE5579E188E35ACB0F12F48 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B9ED540A1D750E7523910 /* StorageManager.swift */; };
+		F6EE9B7A46146192F5A02D35 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7205BE25B05E56F90AB71 /* PaywallView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0407A62E0CF3D6A540954B75 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		1652286DDB0DC5D310F17B42 /* FaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxApp.swift; sourceTree = "<group>"; };
+		3623239C2852C9AEBBB6E543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FCB294365222328BAA290C0 /* CountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManager.swift; sourceTree = "<group>"; };
+		543B9ED540A1D750E7523910 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		608D205297BB02123B2F0976 /* FaxTransmissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxTransmissionService.swift; sourceTree = "<group>"; };
+		68A9558D246554AD89B84366 /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
+		70E59C97C62DA18D6A3BE7D3 /* CoverPageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverPageEditorView.swift; sourceTree = "<group>"; };
+		76B7205BE25B05E56F90AB71 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		854B9CF1AF14088391C4C876 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		873B7C34C0FC6662B10D6A39 /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
+		8F6C59FD7A49333D62B88C9D /* SignaturePadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturePadView.swift; sourceTree = "<group>"; };
+		A35D14280A1DC8EFB949416E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A89F0A6016152878A6A88651 /* PDFGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGenerator.swift; sourceTree = "<group>"; };
+		A8B2D0A5739A2A7BAF84E262 /* DocumentEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentEditorView.swift; sourceTree = "<group>"; };
+		B2EACCF73031B6BB0F25F1E5 /* DocumentScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerCoordinator.swift; sourceTree = "<group>"; };
+		CA814AEDDC98CFFEBD7A9D40 /* ImageFilterUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilterUtility.swift; sourceTree = "<group>"; };
+		CEE8C55A69E87E63D6A264D3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		D3E8DAEB56EC778D158938D8 /* FaxFlow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FaxFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46AF21652EB648470B4B700 /* SendFaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFaxView.swift; sourceTree = "<group>"; };
+		DA974FF915D64DE95334F86D /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		DC42A260F60AC9E561B706F9 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
+		DD68E78C8F4126CAAF514377 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E66ED91F6DF046EF38B67042 /* FaxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxModels.swift; sourceTree = "<group>"; };
+		F06BCD2D603CF6811999B67B /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1BD4A31A306A7582661EBCBE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				873B7C34C0FC6662B10D6A39 /* ContactsListView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		25D831240AE07EA89B52EBF7 /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				8F6C59FD7A49333D62B88C9D /* SignaturePadView.swift */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		36474605BE8FDE75E732EB6F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A35D14280A1DC8EFB949416E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3812CED9B6708083465E1B55 /* FaxTransmissionService */ = {
+			isa = PBXGroup;
+			children = (
+				608D205297BB02123B2F0976 /* FaxTransmissionService.swift */,
+			);
+			path = FaxTransmissionService;
+			sourceTree = "<group>";
+		};
+		406AD4D39A468E50073AF2E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E66ED91F6DF046EF38B67042 /* FaxModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BB5CCC82E90EAA35C490E6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E8DAEB56EC778D158938D8 /* FaxFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ED8C8AA51870261DD58F1A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3623239C2852C9AEBBB6E543 /* Assets.xcassets */,
+				CEE8C55A69E87E63D6A264D3 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		54F14FCF8513FB15C3E995B3 /* DocumentEditor */ = {
+			isa = PBXGroup;
+			children = (
+				A8B2D0A5739A2A7BAF84E262 /* DocumentEditorView.swift */,
+			);
+			path = DocumentEditor;
+			sourceTree = "<group>";
+		};
+		58449060E39158A7971E4DD4 /* CoverPage */ = {
+			isa = PBXGroup;
+			children = (
+				70E59C97C62DA18D6A3BE7D3 /* CoverPageEditorView.swift */,
+			);
+			path = CoverPage;
+			sourceTree = "<group>";
+		};
+		5C876D341E8BF66AEBF59F41 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				543B9ED540A1D750E7523910 /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		8A152A010045A3E311BAF220 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DC42A260F60AC9E561B706F9 /* HistoryListView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		8E5E6E1B8CAB092E7D4436BE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				406AD4D39A468E50073AF2E6 /* Models */,
+				5C876D341E8BF66AEBF59F41 /* Storage */,
+				D7ACC121B827253731199EED /* Theme */,
+				EAC425906136C58F9C1DA4D0 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8F584BD388BA57CA07189664 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9DE3EF2BE3D2CA2B5CD2180B /* App */,
+				8E5E6E1B8CAB092E7D4436BE /* Core */,
+				C8A5CF1A69CB95E93E2F8A92 /* Features */,
+				B7AAFB6170E8777239EAAC2D /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9DE3EF2BE3D2CA2B5CD2180B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD68E78C8F4126CAAF514377 /* AppState.swift */,
+				1652286DDB0DC5D310F17B42 /* FaxApp.swift */,
+				0407A62E0CF3D6A540954B75 /* MainTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7AAFB6170E8777239EAAC2D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F091D757DE7B2F1C675D7BFF /* DocumentScannerService */,
+				3812CED9B6708083465E1B55 /* FaxTransmissionService */,
+				C305B2657A1DA1CCEBF05786 /* StoreKit */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C305B2657A1DA1CCEBF05786 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				854B9CF1AF14088391C4C876 /* StoreManager.swift */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		C89F7BCF63B7E6E51CEF93D2 /* SendFax */ = {
+			isa = PBXGroup;
+			children = (
+				F06BCD2D603CF6811999B67B /* CountryPickerView.swift */,
+				D46AF21652EB648470B4B700 /* SendFaxView.swift */,
+			);
+			path = SendFax;
+			sourceTree = "<group>";
+		};
+		C8A5CF1A69CB95E93E2F8A92 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1BD4A31A306A7582661EBCBE /* Contacts */,
+				58449060E39158A7971E4DD4 /* CoverPage */,
+				54F14FCF8513FB15C3E995B3 /* DocumentEditor */,
+				8A152A010045A3E311BAF220 /* History */,
+				CB0E619F40A7662FA015B5D5 /* Paywall */,
+				C89F7BCF63B7E6E51CEF93D2 /* SendFax */,
+				36474605BE8FDE75E732EB6F /* Settings */,
+				25D831240AE07EA89B52EBF7 /* Signature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CB0E619F40A7662FA015B5D5 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				76B7205BE25B05E56F90AB71 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		D7ACC121B827253731199EED /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				DA974FF915D64DE95334F86D /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EAC425906136C58F9C1DA4D0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4FCB294365222328BAA290C0 /* CountryManager.swift */,
+				CA814AEDDC98CFFEBD7A9D40 /* ImageFilterUtility.swift */,
+				A89F0A6016152878A6A88651 /* PDFGenerator.swift */,
+				68A9558D246554AD89B84366 /* PhoneFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F091D757DE7B2F1C675D7BFF /* DocumentScannerService */ = {
+			isa = PBXGroup;
+			children = (
+				B2EACCF73031B6BB0F25F1E5 /* DocumentScannerCoordinator.swift */,
+			);
+			path = DocumentScannerService;
+			sourceTree = "<group>";
+		};
+		F8208B83C9F0967E9B2ABF96 = {
+			isa = PBXGroup;
+			children = (
+				4ED8C8AA51870261DD58F1A9 /* Resources */,
+				8F584BD388BA57CA07189664 /* Sources */,
+				4BB5CCC82E90EAA35C490E6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D52B0D2BA5E60250261ABCB9 /* FaxFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6B9EDBBCCBF16712532D49 /* Build configuration list for PBXNativeTarget "FaxFlow" */;
+			buildPhases = (
+				AF81E6539191585DB6576D24 /* Sources */,
+				5846BFBACFD1FC3061037EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaxFlow;
+			packageProductDependencies = (
+			);
+			productName = FaxFlow;
+			productReference = D3E8DAEB56EC778D158938D8 /* FaxFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F4E02A882EBA1101216BF2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D52B0D2BA5E60250261ABCB9 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A7AE7366050C5FD9029BE098 /* Build configuration list for PBXProject "FaxFlow" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ja,
+				ko,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = F8208B83C9F0967E9B2ABF96;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4BB5CCC82E90EAA35C490E6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D52B0D2BA5E60250261ABCB9 /* FaxFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5846BFBACFD1FC3061037EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C214066F508EA1623D010A7 /* Assets.xcassets in Resources */,
+				20E5EE98C667BBA1C57A655D /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF81E6539191585DB6576D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B876DA6A1A83A95627998A /* AppState.swift in Sources */,
+				5E0162D4638282E49C5D779D /* AppTheme.swift in Sources */,
+				D34DBD6848F84719CA863A27 /* ContactsListView.swift in Sources */,
+				B07E4FE98D39AC96787669CE /* CountryManager.swift in Sources */,
+				5D8AE26A2114B07086EBA7E2 /* CountryPickerView.swift in Sources */,
+				1A626BF8494A18B8C367C3F5 /* CoverPageEditorView.swift in Sources */,
+				94643108B10CEFBEE9CE1700 /* DocumentEditorView.swift in Sources */,
+				7896FB24418D91B08D303E66 /* DocumentScannerCoordinator.swift in Sources */,
+				B2F74B471CC93291E6AD56E0 /* FaxApp.swift in Sources */,
+				CD4650CAB2DD7EC26E4C1142 /* FaxModels.swift in Sources */,
+				3B70EF8090F7C97AFC3B0A26 /* FaxTransmissionService.swift in Sources */,
+				8E34A2C311C03804D3B68C55 /* HistoryListView.swift in Sources */,
+				87BC457547ACEE39BEBECA8C /* ImageFilterUtility.swift in Sources */,
+				44532DECE62529894BD44375 /* MainTabView.swift in Sources */,
+				3466C83BFA2F4243F3406139 /* PDFGenerator.swift in Sources */,
+				F6EE9B7A46146192F5A02D35 /* PaywallView.swift in Sources */,
+				C25B597EA19550398AB8CA38 /* PhoneFormatter.swift in Sources */,
+				C495F2E47E69436C22B4947D /* SendFaxView.swift in Sources */,
+				4FE51D9D5FF20FFD2126FEF9 /* SettingsView.swift in Sources */,
+				3D30D691FB830E9267DA38D5 /* SignaturePadView.swift in Sources */,
+				DCE5579E188E35ACB0F12F48 /* StorageManager.swift in Sources */,
+				8EA193DCCE48F12391413AF1 /* StoreManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2673B100BFA4DFC449D4E80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZED_STRING_SWIFT_DATA_STORE_TYPE = xcstrings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evolly.faxflow;
+				PRODUCT_NAME = FaxFlow;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SCREENSHOT_MODE";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29A1993183B86746F890EDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A2A74741C3E49178A452BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZED_STRING_SWIFT_DATA_STORE_TYPE = xcstrings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evolly.faxflow;
+				PRODUCT_NAME = FaxFlow;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SCREENSHOT_MODE";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70EB110419B09F9D4CF86106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7AE7366050C5FD9029BE098 /* Build configuration list for PBXProject "FaxFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70EB110419B09F9D4CF86106 /* Debug */,
+				29A1993183B86746F890EDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BA6B9EDBBCCBF16712532D49 /* Build configuration list for PBXNativeTarget "FaxFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2A74741C3E49178A452BA4 /* Debug */,
+				2673B100BFA4DFC449D4E80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F4E02A882EBA1101216BF2F /* Project object */;
+}

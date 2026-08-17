@@ -1,0 +1,101 @@
+import SwiftUI
+import LocalAuthentication
+
+public struct SettingsView: View {
+    @ObservedObject var storage = StorageManager.shared
+    @State private var isFaceIDEnabled: Bool = UserDefaults.standard.bool(forKey: "UseFaceIDLock")
+    @State private var showingPaywall = false
+    @State private var showingContacts = false
+    
+    public init() {}
+    
+    public var body: some View {
+        NavigationView {
+            Form {
+                // Balance & Subscription Card Section
+                Section {
+                    HStack(spacing: 16) {
+                        Image(systemName: storage.hasActiveSubscription ? "crown.fill" : "creditcard.fill")
+                            .font(.system(size: 36))
+                            .foregroundColor(storage.hasActiveSubscription ? .yellow : AppTheme.accent)
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(storage.hasActiveSubscription ? "unlimited_subscription" : "credit_balance_label")
+                                .font(.headline)
+                            
+                            if !storage.hasActiveSubscription {
+                                Text(String(format: NSLocalizedString("credits_count", comment: ""), storage.availableCredits))
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: { showingPaywall = true }) {
+                            Text(storage.hasActiveSubscription ? "Manage" : "get_more_credits")
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .padding(.horizontal, 12)
+                                .padding(.vertical, 6)
+                                .background(AppTheme.accent)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
+                    }
+                    .padding(.vertical, 6)
+                }
+                
+                Section(header: Text("Fax Management")) {
+                    NavigationLink(destination: ContactsListView()) {
+                        Label("contacts_title", systemImage: "person.crop.circle")
+                    }
+                    
+                    HStack {
+                        Label("Dedicated Fax Number", systemImage: "phone.badge.checkmark")
+                        Spacer()
+                        Text("+1 (800) 555-FAX1")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                
+                Section(header: Text("Security & Privacy")) {
+                    Toggle(isOn: $isFaceIDEnabled) {
+                        Label("app_lock_biometric", systemImage: "faceid")
+                    }
+                    .onChange(of: isFaceIDEnabled) { _, newValue in
+                        UserDefaults.standard.set(newValue, forKey: "UseFaceIDLock")
+                    }
+                }
+                
+                Section(header: Text("Legal & Information")) {
+                    Button(action: {
+                        Task { await StoreManager.shared.restorePurchases() }
+                    }) {
+                        Label("restore_purchases", systemImage: "arrow.clockwise")
+                    }
+                    
+                    Link(destination: URL(string: "https://bpmob.com/fax/privacy/")!) {
+                        Label("privacy_policy", systemImage: "hand.raised.fill")
+                    }
+                    
+                    Link(destination: URL(string: "https://bpmob.com/fax/terms/")!) {
+                        Label("terms_of_use", systemImage: "doc.text.fill")
+                    }
+                    
+                    HStack {
+                        Label("App Version", systemImage: "info.circle")
+                        Spacer()
+                        Text("1.0.0 (Build 1)")
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+            .navigationTitle(Text("tab_settings"))
+            .sheet(isPresented: $showingPaywall) {
+                PaywallView()
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "subscriptions": [
+    {
+      "id": "com.evolly.faxflow.sub.weekly",
+      "price": "3.99",
+      "trial": "3_days"
+    },
+    {
+      "id": "com.evolly.faxflow.sub.monthly",
+      "price": "9.99"
+    },
+    {
+      "id": "com.evolly.faxflow.sub.yearly",
+      "price": "50.99"
+    }
+  ],
+  "consumables": [
+    {
+      "id": "com.evolly.faxflow.credits.10",
+      "price": "4.99",
+      "credits": 10
+    },
+    {
+      "id": "com.evolly.faxflow.credits.50",
+      "price": "19.99",
+      "credits": 50
+    },
+    {
+      "id": "com.evolly.faxflow.credits.100",
+      "price": "34.99",
+      "credits": 100
+    }
+  ]
+}
