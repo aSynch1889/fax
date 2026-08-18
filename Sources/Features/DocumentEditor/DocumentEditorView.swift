@@ -26,7 +26,7 @@ public struct DocumentEditorView: View {
                         .font(.system(size: 64))
                         .foregroundColor(AppTheme.accent)
                     
-                    Text("No pages added")
+                    Text("no_pages_title")
                         .font(.headline)
                         .foregroundColor(.secondary)
                     
@@ -72,7 +72,7 @@ public struct DocumentEditorView: View {
                         }) {
                             VStack(spacing: 4) {
                                 Image(systemName: "rotate.right")
-                                Text("Rotate")
+                                Text("rotate")
                                     .font(.caption2)
                             }
                         }
@@ -94,7 +94,7 @@ public struct DocumentEditorView: View {
                         } label: {
                             VStack(spacing: 4) {
                                 Image(systemName: "camera.filters")
-                                Text("Filter")
+                                Text("filter")
                                     .font(.caption2)
                             }
                         }
@@ -132,7 +132,7 @@ public struct DocumentEditorView: View {
                 }
             }
         }
-        .navigationTitle(document.title.isEmpty ? "Edit Document" : document.title)
+        .navigationTitle(document.title.isEmpty ? NSLocalizedString("edit_document", comment: "") : document.title)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -193,7 +193,7 @@ public struct PageDetailCard: View {
     
     public var body: some View {
         VStack(spacing: 8) {
-            Text("Page \(pageNumber) of \(totalPages)")
+            Text(String(format: NSLocalizedString("page_x_of_y", comment: ""), pageNumber, totalPages))
                 .font(.caption)
                 .foregroundColor(.secondary)
             

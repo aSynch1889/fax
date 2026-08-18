@@ -16,7 +16,7 @@ public struct HistoryListView: View {
     public var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                Picker("Filter", selection: $selectedSegment) {
+                Picker("filter", selection: $selectedSegment) {
                     Text("history_sent").tag(0)
                     Text("history_outbox").tag(1)
                 }
@@ -52,7 +52,9 @@ public struct HistoryListView: View {
                                     Text(record.recipient.name.isEmpty ? record.recipient.formattedFullNumber : record.recipient.name)
                                         .font(.headline)
                                     
-                                    Text(record.subject.isEmpty ? "\(record.pageCount) Pages" : "\(record.subject) • \(record.pageCount) Pages")
+                                    Text(record.subject.isEmpty
+                                         ? String(format: NSLocalizedString("pages_count", comment: ""), record.pageCount)
+                                         : String(format: NSLocalizedString("subject_pages_format", comment: ""), record.subject, record.pageCount))
                                         .font(.subheadline)
                                         .foregroundColor(.secondary)
                                     
@@ -101,7 +103,7 @@ public struct TransmissionDetailView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                     
-                    Text("Confirmation Code: \(record.confirmationCode)")
+                    Text(String(format: NSLocalizedString("confirmation_code", comment: ""), record.confirmationCode))
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
@@ -111,13 +113,13 @@ public struct TransmissionDetailView: View {
                 
                 // Transmission Details
                 VStack(alignment: .leading, spacing: 14) {
-                    DetailRow(label: "Recipient Name", value: record.recipient.name.isEmpty ? "Direct Fax Line" : record.recipient.name)
-                    DetailRow(label: "Destination Number", value: record.recipient.formattedFullNumber)
-                    DetailRow(label: "Country Code", value: record.recipient.countryCode)
-                    DetailRow(label: "Pages Transmitted", value: "\(record.pageCount) Pages")
-                    DetailRow(label: "Credits Consumed", value: "\(record.creditsUsed) Credits")
-                    DetailRow(label: "Duration", value: "\(record.transmissionDurationSeconds) seconds")
-                    DetailRow(label: "Sent Timestamp", value: DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium))
+                    DetailRow(label: "recipient_name_label", value: record.recipient.name.isEmpty ? NSLocalizedString("direct_fax_line", comment: "") : record.recipient.name)
+                    DetailRow(label: "destination_number", value: record.recipient.formattedFullNumber)
+                    DetailRow(label: "country_code", value: record.recipient.countryCode)
+                    DetailRow(label: "pages_transmitted", value: String(format: NSLocalizedString("pages_count", comment: ""), record.pageCount))
+                    DetailRow(label: "credits_consumed", value: String(format: NSLocalizedString("credits_count", comment: ""), record.creditsUsed))
+                    DetailRow(label: "duration", value: String(format: NSLocalizedString("seconds_count", comment: ""), record.transmissionDurationSeconds))
+                    DetailRow(label: "sent_timestamp", value: DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium))
                 }
                 .padding()
                 .glassCard()
@@ -143,7 +145,7 @@ public struct TransmissionDetailView: View {
             }
             .padding()
         }
-        .navigationTitle("Transmission Log")
+        .navigationTitle(Text("transmission_log"))
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -180,7 +182,7 @@ public struct QuickLookPreview: UIViewControllerRepresentable {
 }
 
 public struct DetailRow: View {
-    public var label: String
+    public var label: LocalizedStringKey
     public var value: String
     
     public var body: some View {

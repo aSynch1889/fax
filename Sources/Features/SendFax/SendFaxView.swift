@@ -129,9 +129,13 @@ public struct SendFaxView: View {
                             
                             HStack {
                                 VStack(alignment: .leading, spacing: 4) {
-                                    Text(currentDocument.coverPage.subject.isEmpty ? "Subject: (None)" : "Subject: \(currentDocument.coverPage.subject)")
+                                    Text(currentDocument.coverPage.subject.isEmpty
+                                         ? NSLocalizedString("cover_subject_none", comment: "")
+                                         : String(format: NSLocalizedString("cover_subject_format", comment: ""), currentDocument.coverPage.subject))
                                         .font(.subheadline)
-                                    Text("From: \(currentDocument.coverPage.senderName.isEmpty ? "Default Sender" : currentDocument.coverPage.senderName)")
+                                    Text(currentDocument.coverPage.senderName.isEmpty
+                                         ? String(format: NSLocalizedString("from_format", comment: ""), NSLocalizedString("default_sender", comment: ""))
+                                         : String(format: NSLocalizedString("from_format", comment: ""), currentDocument.coverPage.senderName))
                                         .font(.caption)
                                         .foregroundColor(.secondary)
                                 }
@@ -157,7 +161,7 @@ public struct SendFaxView: View {
                             Text("documents_section")
                                 .font(.headline)
                             Spacer()
-                            Text("\(currentDocument.pages.count) Pages")
+                            Text(String(format: NSLocalizedString("pages_count", comment: ""), currentDocument.pages.count))
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
@@ -215,7 +219,7 @@ public struct SendFaxView: View {
                                         VStack {
                                             Image(systemName: "plus")
                                                 .font(.title2)
-                                            Text("Add")
+                                            Text("add")
                                                 .font(.caption)
                                         }
                                         .frame(width: 80, height: 110)
@@ -227,7 +231,7 @@ public struct SendFaxView: View {
                             
                             Button(action: { showingDocumentEditor = true }) {
                                 HStack {
-                                    Text("Preview & Edit Pages")
+                                    Text("preview_edit_pages")
                                     Spacer()
                                     Image(systemName: "chevron.right")
                                 }
@@ -345,9 +349,9 @@ public struct DocumentsListView: View {
                         Image(systemName: "folder")
                             .font(.system(size: 56))
                             .foregroundColor(.secondary)
-                        Text("No Documents")
+                        Text("no_documents_title")
                             .font(.headline)
-                        Text("Scanned and drafted documents will be saved here.")
+                        Text("no_documents_desc")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
@@ -365,7 +369,7 @@ public struct DocumentsListView: View {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(doc.title)
                                         .font(.headline)
-                                    Text("\(doc.pages.count) Pages • \(DateFormatter.localizedString(from: doc.updatedAt, dateStyle: .short, timeStyle: .none))")
+                                    Text(String(format: NSLocalizedString("pages_count_date", comment: ""), doc.pages.count, DateFormatter.localizedString(from: doc.updatedAt, dateStyle: .short, timeStyle: .none)))
                                         .font(.caption)
                                         .foregroundColor(.secondary)
                                 }
@@ -390,7 +394,7 @@ public struct DocumentsListView: View {
             }
             .sheet(isPresented: $showingScanner) {
                 DocumentScannerRepresentable(onScanned: { images in
-                    var newDoc = FaxDocument(title: "Scanned \(DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .short))")
+                    var newDoc = FaxDocument(title: String(format: NSLocalizedString("scanned_doc_title", comment: ""), DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .short)))
                     for img in images {
                         let fn = storage.savePageImage(img)
                         newDoc.pages.append(FaxPage(imageFileName: fn))

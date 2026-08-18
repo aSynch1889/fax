@@ -2,6 +2,142 @@
   "sourceLanguage": "en",
   "version": "1.0",
   "strings": {
+    "add": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가"
+          }
+        }
+      }
+    },
+    "add_contact": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Contact"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加联系人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增聯絡人"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連絡先を追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연락처 추가"
+          }
+        }
+      }
+    },
+    "add_signature": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Signature"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加签名"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增簽名"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "署名を追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서명 추가"
+          }
+        }
+      }
+    },
+    "app_lock_biometric": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID / Touch ID Protection"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面容 ID / 触控 ID 隐私保护"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID / Touch ID 隱私保護"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID / Touch ID ロック"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID / Touch ID 잠금 보호"
+          }
+        }
+      }
+    },
     "app_name": {
       "localizations": {
         "en": {
@@ -36,308 +172,104 @@
         }
       }
     },
-    "tab_send": {
+    "app_version": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Send Fax"
+            "value": "App Version"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "发送传真"
+            "value": "应用版本"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "發送傳真"
+            "value": "應用程式版本"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "FAX送信"
+            "value": "アプリバージョン"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "팩스 보내기"
+            "value": "앱 버전"
           }
         }
       }
     },
-    "tab_documents": {
+    "badge_popular": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Documents"
+            "value": "POPULAR"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "文档管理"
+            "value": "热门"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "文檔管理"
+            "value": "熱門"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ドキュメント"
+            "value": "人気"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "문서"
+            "value": "인기"
           }
         }
       }
     },
-    "tab_history": {
+    "cancel": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "History"
+            "value": "Cancel"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "发送记录"
+            "value": "取消"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "發送記錄"
+            "value": "取消"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送信履歴"
+            "value": "キャンセル"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전송 내역"
-          }
-        }
-      }
-    },
-    "tab_settings": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Settings"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "设置"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "設定"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "設定"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "설정"
-          }
-        }
-      }
-    },
-    "send_fax_title": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "New Fax"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新建传真"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新建傳真"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新規FAX"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "새 팩스"
-          }
-        }
-      }
-    },
-    "recipient_section": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Recipient"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "收件人信息"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "收件人資訊"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "宛先情報"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "수신자 정보"
-          }
-        }
-      }
-    },
-    "country_region": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Country / Region"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "国家/地区"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "國家/地區"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "国 / 地域"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "국가 / 지역"
-          }
-        }
-      }
-    },
-    "fax_number_placeholder": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Enter fax number"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "输入传真号码"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "輸入傳真號碼"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "FAX番号を入力"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "팩스 번호 입력"
-          }
-        }
-      }
-    },
-    "recipient_name_placeholder": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Recipient Name (Optional)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "收件人姓名（选填）"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "收件人姓名（選填）"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "宛名（任意）"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "수신자 이름 (선택사항)"
+            "value": "취소"
           }
         }
       }
@@ -376,6 +308,346 @@
         }
       }
     },
+    "clear": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリア"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지우기"
+          }
+        }
+      }
+    },
+    "company_org_placeholder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Company / Organization"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "公司 / 组织"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "公司 / 組織"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会社/組織"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회사 / 조직"
+          }
+        }
+      }
+    },
+    "confirmation_code": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirmation Code: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "确认码：%@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認碼：%@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認コード：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인 코드: %@"
+          }
+        }
+      }
+    },
+    "contact_name_placeholder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recipient / Company Name"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人 / 公司名称"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人 / 公司名稱"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受信者/会社名"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신자 / 회사명"
+          }
+        }
+      }
+    },
+    "contact_org_placeholder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Department / Org (Optional)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部门 / 组织（可选）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部門 / 組織（選填）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部署/組織（任意）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부서 / 조직 (선택)"
+          }
+        }
+      }
+    },
+    "contacts_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fax Contacts"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "常用传真联系人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "常用傳真聯絡人"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX連絡先"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 연락처"
+          }
+        }
+      }
+    },
+    "continue_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繼續"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "続行"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계속"
+          }
+        }
+      }
+    },
+    "country": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国家"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "國家"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "국가"
+          }
+        }
+      }
+    },
+    "country_code": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country Code"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国家代码"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "國家代碼"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国コード"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "국가 코드"
+          }
+        }
+      }
+    },
+    "country_region": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country / Region"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国家/地区"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "國家/地區"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国 / 地域"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "국가 / 지역"
+          }
+        }
+      }
+    },
     "cover_page_section": {
       "localizations": {
         "en": {
@@ -410,70 +682,580 @@
         }
       }
     },
-    "include_cover_page": {
+    "cover_subject_format": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Include Cover Page"
+            "value": "Subject: %@"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "包含传真封面"
+            "value": "主题：%@"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "包含傳真封面"
+            "value": "主題：%@"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送付状を添付する"
+            "value": "件名：%@"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "표지 포함"
+            "value": "제목: %@"
           }
         }
       }
     },
-    "edit_cover_page": {
+    "cover_subject_none": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Edit Cover Page"
+            "value": "Subject: (None)"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "编辑封面内容"
+            "value": "主题：（无）"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "編輯封面內容"
+            "value": "主題：（無）"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送付状を編集"
+            "value": "件名：（なし）"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "표지 편집"
+            "value": "제목: (없음)"
+          }
+        }
+      }
+    },
+    "credit_balance_label": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available Fax Balance"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前可用传真余额"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前可用傳真餘額"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "利用可能なFAX残高"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용 가능한 팩스 잔액"
+          }
+        }
+      }
+    },
+    "credit_pack_10": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 Fax Credits"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 页传真点数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 頁傳真點數"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 FAXクレジット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 팩스 크레딧"
+          }
+        }
+      }
+    },
+    "credit_pack_100": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 Fax Credits"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 页传真点数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 頁傳真點數"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 FAXクレジット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 팩스 크레딧"
+          }
+        }
+      }
+    },
+    "credit_pack_50": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 Fax Credits"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 页传真点数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 頁傳真點數"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 FAXクレジット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 팩스 크레딧"
+          }
+        }
+      }
+    },
+    "credit_packs_tab": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Credit Packs"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点数包"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "點數包"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クレジットパック"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "크레딧 팩"
+          }
+        }
+      }
+    },
+    "credits_consumed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Credits Consumed"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消耗点数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消耗點數"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消費クレジット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용 크레딧"
+          }
+        }
+      }
+    },
+    "credits_count": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d Credits"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 点"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 點"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d クレジット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 크레딧"
+          }
+        }
+      }
+    },
+    "credits_required": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d Credits Required (%d Pages)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需消耗 %d 点点数（共 %d 页）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需消耗 %d 點點數（共 %d 頁）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d クレジット必要 (計 %d ページ)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 크레딧 필요 (총 %d페이지)"
+          }
+        }
+      }
+    },
+    "dedicated_fax_number": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dedicated Fax Number"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "专属传真号码"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "專屬傳真號碼"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "専用FAX番号"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전용 팩스 번호"
+          }
+        }
+      }
+    },
+    "default_contact_name": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contact"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "联系人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "聯絡人"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連絡先"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연락처"
+          }
+        }
+      }
+    },
+    "default_cover_page_style": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default Cover Template"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "默认封面样式"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "預設封面樣式"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デフォルト送付状スタイル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기본 표지 템플릿"
+          }
+        }
+      }
+    },
+    "default_sender": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default Sender"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "默认发件人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "預設寄件人"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デフォルト送信者"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기본 발신자"
+          }
+        }
+      }
+    },
+    "delete": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刪除"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "삭제"
+          }
+        }
+      }
+    },
+    "destination_number": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destination Number"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目标号码"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目標號碼"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信先番号"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신 번호"
+          }
+        }
+      }
+    },
+    "direct_fax_line": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direct Fax Line"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直拨传真"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直撥傳真"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接FAX回線"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "직통 팩스 라인"
           }
         }
       }
@@ -512,206 +1294,580 @@
         }
       }
     },
-    "scan_document": {
+    "done": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Scan Document"
+            "value": "Done"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "扫描新文档"
+            "value": "完成"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "掃描新文檔"
+            "value": "完成"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "書類をスキャン"
+            "value": "完了"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "문서 스캔"
+            "value": "완료"
           }
         }
       }
     },
-    "import_photos": {
+    "draw_signature_hint": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Import from Photos"
+            "value": "Draw your signature using your finger or Apple Pencil"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "从相册导入"
+            "value": "使用手指或 Apple Pencil 在此处书写签名"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "從相簿匯入"
+            "value": "使用手指或 Apple Pencil 在此處書寫簽名"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "写真から読み込む"
+            "value": "指またはApple Pencilで署名を記入してください"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "사진에서 가져오기"
+            "value": "손가락이나 Apple Pencil로 서명을 작성하세요"
           }
         }
       }
     },
-    "import_files": {
+    "duration": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Import PDF / Files"
+            "value": "Duration"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "从文件导入 PDF"
+            "value": "用时"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "從檔案匯入 PDF"
+            "value": "用時"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ファイル/PDFから追加"
+            "value": "所要時間"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "PDF/파일 가져오기"
+            "value": "소요 시간"
           }
         }
       }
     },
-    "sign_document": {
+    "edit_cover_page": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sign Document"
+            "value": "Edit Cover Page"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "添加电子签名"
+            "value": "编辑封面内容"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "添加電子簽名"
+            "value": "編輯封面內容"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "電子署名を追加"
+            "value": "送付状を編集"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전자 서명 추가"
+            "value": "표지 편집"
           }
         }
       }
     },
-    "send_fax_button": {
+    "edit_document": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Send Fax Now"
+            "value": "Edit Document"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "立即发送传真"
+            "value": "编辑文档"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "立即發送傳真"
+            "value": "編輯文件"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "今すぐFAXを送信"
+            "value": "書類を編集"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "지금 팩스 보내기"
+            "value": "문서 편집"
           }
         }
       }
     },
-    "credits_required": {
+    "fax_number": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d Credits Required (%d Pages)"
+            "value": "Fax Number"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "需消耗 %d 点点数（共 %d 页）"
+            "value": "传真号码"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "需消耗 %d 點點數（共 %d 頁）"
+            "value": "傳真號碼"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d クレジット必要 (計 %d ページ)"
+            "value": "FAX番号"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d 크레딧 필요 (총 %d페이지)"
+            "value": "팩스 번호"
+          }
+        }
+      }
+    },
+    "fax_number_placeholder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter fax number"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入传真号码"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入傳真號碼"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX番号を入力"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 번호 입력"
+          }
+        }
+      }
+    },
+    "feature_esign": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built-in Legal E-Signature & Cover Pages"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内置法律效力电子签名与精美传真封面"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "內建法律效力電子簽名與精緻傳真封面"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電子署名と送付状テンプレート搭載"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전자 서명 및 맞춤형 표지 템플릿 제공"
+          }
+        }
+      }
+    },
+    "feature_fast_delivery": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ultra-Fast Global Delivery to 90+ Countries"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "极速发送至全球 90 多个国家和地区"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "極速發送至全球 90 多個國家與地區"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "世界90カ国以上へ高速FAX送信"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90개국 이상으로 신속한 글로벌 전송"
+          }
+        }
+      }
+    },
+    "feature_hd_scanner": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HD Document Scanner with Auto-Correction"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高清智能扫描仪，自动去阴影与透视矫正"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高畫質智慧掃描器，自動去陰影與透視校正"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動台形補正・影除去対応のHDスキャナー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 왜곡 보정 및 그림자 제거 HD 스캐너"
+          }
+        }
+      }
+    },
+    "feature_receipts": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official Delivery Confirmation Receipts"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "官方认证的传真发送确认回执与追踪"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "官方認證的傳真發送確認憑證與追蹤"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "公式送信完了受領証と追跡通知"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "공식 전송 확인 영수증 및 실시간 추적"
+          }
+        }
+      }
+    },
+    "filter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filter"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滤镜"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "濾鏡"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フィルタ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "필터"
+          }
+        }
+      }
+    },
+    "filter_bw": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B&W Fax"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "黑白传真"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "黑白傳真"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "白黒FAX"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "흑백 팩스"
+          }
+        }
+      }
+    },
+    "filter_enhanced": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enhanced Doc"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文档增强"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文檔增強"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文書強調"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "문서 최적화"
+          }
+        }
+      }
+    },
+    "filter_grayscale": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grayscale"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰度清晰"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灰階清晰"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "グレースケール"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그레이스케일"
+          }
+        }
+      }
+    },
+    "filter_original": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原图"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原圖"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オリジナル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본"
+          }
+        }
+      }
+    },
+    "from_format": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发件人：%@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寄件人：%@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信元：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "발신자: %@"
           }
         }
       }
@@ -818,206 +1974,614 @@
         }
       }
     },
-    "status_sending": {
+    "import_files": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Transmitting..."
+            "value": "Import PDF / Files"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "正在传输..."
+            "value": "从文件导入 PDF"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "正在傳輸..."
+            "value": "從檔案匯入 PDF"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "通信中..."
+            "value": "ファイル/PDFから追加"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전송 중..."
+            "value": "PDF/파일 가져오기"
           }
         }
       }
     },
-    "status_delivered": {
+    "import_photos": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Delivered"
+            "value": "Import from Photos"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "成功送达"
+            "value": "从相册导入"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "成功送達"
+            "value": "從相簿匯入"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "配信完了"
+            "value": "写真から読み込む"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전송 성공"
+            "value": "사진에서 가져오기"
           }
         }
       }
     },
-    "status_failed": {
+    "include_cover_page": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Failed"
+            "value": "Include Cover Page"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "发送失败"
+            "value": "包含传真封面"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "發送失敗"
+            "value": "包含傳真封面"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送信失敗"
+            "value": "送付状を添付する"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전송 실패"
+            "value": "표지 포함"
           }
         }
       }
     },
-    "status_dialing": {
+    "manage": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dialing line..."
+            "value": "Manage"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "正在拨号..."
+            "value": "管理"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "正在撥號..."
+            "value": "管理"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ダイヤル中..."
+            "value": "管理"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "연결 중..."
+            "value": "관리"
           }
         }
       }
     },
-    "view_receipt": {
+    "mark_favorite": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "View Transmission Receipt"
+            "value": "Mark as Favorite"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "查看传真发送凭证"
+            "value": "标记为收藏"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "查看傳真發送憑證"
+            "value": "標記為收藏"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送信受領証を表示"
+            "value": "お気に入りに登録"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전송 확인 영수증 보기"
+            "value": "즐겨찾기로 표시"
           }
         }
       }
     },
-    "paywall_title": {
+    "no_contacts_title": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Unlimited Faxing"
+            "value": "No saved contacts"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "开启无限传真服务"
+            "value": "暂无保存的联系人"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "開啟無限傳真服務"
+            "value": "暫無儲存的聯絡人"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "FAXプレミアムプラン"
+            "value": "保存された連絡先はありません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "무제한 팩스 프리미엄"
+            "value": "저장된 연락처가 없습니다"
+          }
+        }
+      }
+    },
+    "no_documents_desc": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanned and drafted documents will be saved here."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "扫描和草拟的文档将保存在这里。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "掃描和草擬的文件將儲存在這裡。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキャンおよび作成中の書類がここに保存されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스캔하고 작성한 문서가 여기에 저장됩니다."
+          }
+        }
+      }
+    },
+    "no_documents_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Documents"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无文档"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暫無文件"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書類はありません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "문서가 없습니다"
+          }
+        }
+      }
+    },
+    "no_history_desc": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your sent and in-progress faxes will appear here with delivery receipts."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您发送的传真及传输确认凭证将显示在此处。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您發送的傳真及傳輸確認憑證將顯示在此處。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信されたFAXおよび送信受領証がここに表示されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보낸 팩스와 전송 영수증이 여기에 표시됩니다."
+          }
+        }
+      }
+    },
+    "no_history_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Faxes Yet"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无发送记录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暫無發送記錄"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信履歴はありません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 내역이 없습니다"
+          }
+        }
+      }
+    },
+    "no_pages_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pages added"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未添加页面"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未新增頁面"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページが追加されていません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가된 페이지가 없습니다"
+          }
+        }
+      }
+    },
+    "not_available": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N/A"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不适用"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不適用"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なし"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해당 없음"
+          }
+        }
+      }
+    },
+    "notes_remarks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notes / Remarks"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "备注留言"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "備註留言"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "備考・連絡事項"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비고 및 메모"
+          }
+        }
+      }
+    },
+    "options": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Options"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选项"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選項"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オプション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "옵션"
+          }
+        }
+      }
+    },
+    "page_x_of_y": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page %d of %d"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "第 %d 页，共 %d 页"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "第 %d 頁，共 %d 頁"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d / %d ページ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d / %d 페이지"
+          }
+        }
+      }
+    },
+    "pages_count": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d Pages"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 页"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 頁"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%dページ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d페이지"
+          }
+        }
+      }
+    },
+    "pages_count_date": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d Pages • %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 页 • %@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 頁 • %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%dページ • %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d페이지 • %@"
+          }
+        }
+      }
+    },
+    "pages_transmitted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages Transmitted"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已传输页数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已傳輸頁數"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信ページ数"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송된 페이지 수"
           }
         }
       }
@@ -1056,36 +2620,1158 @@
         }
       }
     },
-    "plan_weekly": {
+    "paywall_title": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "1 Week (3-Day Free Trial)"
+            "value": "Unlimited Faxing"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "周度订阅（含 3 天免费试用）"
+            "value": "开启无限传真服务"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "週度訂閱（含 3 天免費試用）"
+            "value": "開啟無限傳真服務"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "1週間プラン（3日間無料体験）"
+            "value": "FAXプレミアムプラン"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "1주일 플랜 (3일 무료 체험)"
+            "value": "무제한 팩스 프리미엄"
+          }
+        }
+      }
+    },
+    "pdf_cover_minimal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX COVER"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传真封面"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳真封面"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAXカバー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 커버"
+          }
+        }
+      }
+    },
+    "pdf_cover_modern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX TRANSMISSION"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传真传输"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳真傳輸"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX送信"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 전송"
+          }
+        }
+      }
+    },
+    "pdf_cover_professional": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FACSIMILE TRANSMITTAL"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传真发送函"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳真發送函"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファクシミリ送信"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩시밀리 송신"
+          }
+        }
+      }
+    },
+    "pdf_cover_professional_sub": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "STANDARD BUSINESS COVER"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "标准商务封面"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標準商務封面"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スタンダードビジネスカバー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표준 비즈니스 커버"
+          }
+        }
+      }
+    },
+    "pdf_cover_urgent": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URGENT PRIORITY FACSIMILE"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "紧急优先传真"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急優先傳真"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急優先FAX"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "긴급 우선 팩스"
+          }
+        }
+      }
+    },
+    "pdf_default_notes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please review the attached pages. Should any transmission issues occur, please contact sender."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请查阅附件页面。如出现任何传输问题，请联系发件人。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請查閱附件頁面。如出現任何傳輸問題，請聯絡寄件人。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添付のページをご確認ください。送信に問題が発生した場合は送信者までご連絡ください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첨부 페이지를 확인해 주세요. 전송 문제가 발생하면 발신자에게 연락해 주세요."
+          }
+        }
+      }
+    },
+    "pdf_default_recipient": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recipient"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受信者"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신자"
+          }
+        }
+      }
+    },
+    "pdf_default_sender": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sender"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发件人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寄件人"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信者"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "발신자"
+          }
+        }
+      }
+    },
+    "pdf_default_subject": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fax Document Transmission"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传真文件传输"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳真文件傳輸"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX書類送信"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 문서 전송"
+          }
+        }
+      }
+    },
+    "pdf_field_confirmation_code": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirmation Code:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "确认码："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認碼："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認コード："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인 코드:"
+          }
+        }
+      }
+    },
+    "pdf_field_country": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国家："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "國家："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "国："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "국가:"
+          }
+        }
+      }
+    },
+    "pdf_field_destination": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destination Number:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目标号码："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目標號碼："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信先番号："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신 번호:"
+          }
+        }
+      }
+    },
+    "pdf_field_duration": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duration:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用时："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用時："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所要時間："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소요 시간:"
+          }
+        }
+      }
+    },
+    "pdf_field_pages": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages Sent:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已发送页数："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已傳送頁數："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信ページ数："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 페이지 수:"
+          }
+        }
+      }
+    },
+    "pdf_field_recipient": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recipient:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受信者："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신자:"
+          }
+        }
+      }
+    },
+    "pdf_field_status": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transmission Status:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传输状态："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳輸狀態："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信ステータス："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 상태:"
+          }
+        }
+      }
+    },
+    "pdf_field_subject": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subject:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主题："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主題："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "件名："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제목:"
+          }
+        }
+      }
+    },
+    "pdf_field_timestamp": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sent Timestamp:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送时间："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳送時間："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信日時："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 시각:"
+          }
+        }
+      }
+    },
+    "pdf_footer_notice": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generated cryptographically by FaxFlow Secure Transmission Gateway."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由 FaxFlow 安全传输网关加密生成。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由 FaxFlow 安全傳輸閘道加密產生。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaxFlowセキュア送信ゲートウェイにより暗号化生成。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaxFlow 보안 전송 게이트웨이에서 암호화 생성됨."
+          }
+        }
+      }
+    },
+    "pdf_label_date": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DATE:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日期："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日期："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日付："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "날짜:"
+          }
+        }
+      }
+    },
+    "pdf_label_from": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FROM:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发件人："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寄件人："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信者："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "발신:"
+          }
+        }
+      }
+    },
+    "pdf_label_pages": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PAGES:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "页数："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "頁數："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページ数："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "페이지:"
+          }
+        }
+      }
+    },
+    "pdf_label_phone": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PHONE:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "电话："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電話："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電話："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전화:"
+          }
+        }
+      }
+    },
+    "pdf_label_remarks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "REMARKS & NOTES:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "备注与说明："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "備註與說明："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "備考・注記："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비고 및 메모:"
+          }
+        }
+      }
+    },
+    "pdf_label_subject": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SUBJECT:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主题："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主題："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "件名："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제목:"
+          }
+        }
+      }
+    },
+    "pdf_label_to": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TO:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人："
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收件人："
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受信者："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신:"
+          }
+        }
+      }
+    },
+    "pdf_pages_including_cover": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d (Including Cover)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d（含封面）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d（含封面）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d（カバー含む）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d (표지 포함)"
+          }
+        }
+      }
+    },
+    "pdf_receipt_subtitle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official Delivery Confirmation & Log"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正式送达确认与日志"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正式送達確認與日誌"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "公式な配信確認およびログ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "공식 전달 확인 및 로그"
+          }
+        }
+      }
+    },
+    "pdf_receipt_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX TRANSMISSION RECEIPT"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传真传输回执"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳真傳輸回執"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX送信確認書"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 전송 확인서"
+          }
+        }
+      }
+    },
+    "pdf_seal_error": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ERROR"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "錯誤"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エラー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오류"
+          }
+        }
+      }
+    },
+    "pdf_seal_verified": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VERIFIED"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已验证"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已驗證"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検証済み"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검증됨"
+          }
+        }
+      }
+    },
+    "pdf_status_failed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAILED"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失败"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失敗"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失敗"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실패"
+          }
+        }
+      }
+    },
+    "pdf_status_success": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DELIVERED (SUCCESS)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已送达（成功）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已送達（成功）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信済み（成功）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송됨 (성공)"
           }
         }
       }
@@ -1124,6 +3810,40 @@
         }
       }
     },
+    "plan_weekly": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 Week (3-Day Free Trial)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "周度订阅（含 3 天免费试用）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "週度訂閱（含 3 天免費試用）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1週間プラン（3日間無料体験）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1주일 플랜 (3일 무료 체험)"
+          }
+        }
+      }
+    },
     "plan_yearly": {
       "localizations": {
         "en": {
@@ -1158,138 +3878,206 @@
         }
       }
     },
-    "credit_pack_10": {
+    "preview_edit_pages": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "10 Fax Credits"
+            "value": "Preview & Edit Pages"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "10 页传真点数"
+            "value": "预览并编辑页面"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "10 頁傳真點數"
+            "value": "預覽並編輯頁面"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "10 FAXクレジット"
+            "value": "ページをプレビュー・編集"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "10 팩스 크레딧"
+            "value": "페이지 미리보기 및 편집"
           }
         }
       }
     },
-    "credit_pack_50": {
+    "preview_pdf": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "50 Fax Credits"
+            "value": "Preview Fax Document"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "50 页传真点数"
+            "value": "预览完整传真"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "50 頁傳真點數"
+            "value": "預覽完整傳真"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "50 FAXクレジット"
+            "value": "FAXプレビュー"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "50 팩스 크레딧"
+            "value": "팩스 미리보기"
           }
         }
       }
     },
-    "credit_pack_100": {
+    "price_per_month": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "100 Fax Credits"
+            "value": "%@ / month"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "100 页传真点数"
+            "value": "%@ / 月"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "100 頁傳真點數"
+            "value": "%@ / 月"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "100 FAXクレジット"
+            "value": "%@ / 月"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "100 팩스 크레딧"
+            "value": "%@ / 월"
           }
         }
       }
     },
-    "restore_purchases": {
+    "price_per_page": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Restore Purchases"
+            "value": "%@ per page"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "恢复购买"
+            "value": "每页 %@"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "恢復購買"
+            "value": "每頁 %@"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "購入を復元"
+            "value": "1ページあたり%@"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "구매 복원"
+            "value": "페이지당 %@"
+          }
+        }
+      }
+    },
+    "price_per_week": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / week"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 周"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 週"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 週"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 주"
+          }
+        }
+      }
+    },
+    "price_per_year": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / year"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 年"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 年"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 年"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / 년"
           }
         }
       }
@@ -1328,342 +4116,444 @@
         }
       }
     },
-    "terms_of_use": {
+    "recipient_details": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Terms of Use"
+            "value": "Recipient Details"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用条款"
+            "value": "收件人信息"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用條款"
+            "value": "收件人資訊"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "利用規約"
+            "value": "受信者の詳細"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "이용약관"
+            "value": "수신자 정보"
           }
         }
       }
     },
-    "credit_balance_label": {
+    "recipient_name_label": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Available Fax Balance"
+            "value": "Recipient Name"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "当前可用传真余额"
+            "value": "收件人名称"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "目前可用傳真餘額"
+            "value": "收件人名稱"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "利用可能なFAX残高"
+            "value": "受信者名"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "사용 가능한 팩스 잔액"
+            "value": "수신자 이름"
           }
         }
       }
     },
-    "unlimited_subscription": {
+    "recipient_name_placeholder": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Unlimited Active Subscription"
+            "value": "Recipient Name (Optional)"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "无限传真订阅已激活"
+            "value": "收件人姓名（选填）"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "無限傳真訂閱已啟用"
+            "value": "收件人姓名（選填）"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "無制限プラン利用中"
+            "value": "宛名（任意）"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "무제한 플랜 활성화됨"
+            "value": "수신자 이름 (선택사항)"
           }
         }
       }
     },
-    "credits_count": {
+    "recipient_section": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d Credits"
+            "value": "Recipient"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d 点"
+            "value": "收件人信息"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d 點"
+            "value": "收件人資訊"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d クレジット"
+            "value": "宛先情報"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%d 크레딧"
+            "value": "수신자 정보"
           }
         }
       }
     },
-    "feature_fast_delivery": {
+    "restore_purchases": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ultra-Fast Global Delivery to 90+ Countries"
+            "value": "Restore Purchases"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "极速发送至全球 90 多个国家和地区"
+            "value": "恢复购买"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "極速發送至全球 90 多個國家與地區"
+            "value": "恢復購買"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "世界90カ国以上へ高速FAX送信"
+            "value": "購入を復元"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "90개국 이상으로 신속한 글로벌 전송"
+            "value": "구매 복원"
           }
         }
       }
     },
-    "feature_hd_scanner": {
+    "rotate": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "HD Document Scanner with Auto-Correction"
+            "value": "Rotate"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "高清智能扫描仪，自动去阴影与透视矫正"
+            "value": "旋转"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "高畫質智慧掃描器，自動去陰影與透視校正"
+            "value": "旋轉"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "自動台形補正・影除去対応のHDスキャナー"
+            "value": "回転"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "자동 왜곡 보정 및 그림자 제거 HD 스캐너"
+            "value": "회전"
           }
         }
       }
     },
-    "feature_esign": {
+    "save": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Built-in Legal E-Signature & Cover Pages"
+            "value": "Save"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "内置法律效力电子签名与精美传真封面"
+            "value": "保存"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "內建法律效力電子簽名與精緻傳真封面"
+            "value": "儲存"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "電子署名と送付状テンプレート搭載"
+            "value": "保存"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전자 서명 및 맞춤형 표지 템플릿 제공"
+            "value": "저장"
           }
         }
       }
     },
-    "feature_receipts": {
+    "scan_document": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Official Delivery Confirmation Receipts"
+            "value": "Scan Document"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "官方认证的传真发送确认回执与追踪"
+            "value": "扫描新文档"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "官方認證的傳真發送確認憑證與追蹤"
+            "value": "掃描新文檔"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "公式送信完了受領証と追跡通知"
+            "value": "書類をスキャン"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "공식 전송 확인 영수증 및 실시간 추적"
+            "value": "문서 스캔"
           }
         }
       }
     },
-    "app_lock_biometric": {
+    "scanned_doc_title": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Face ID / Touch ID Protection"
+            "value": "Scanned %@"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "面容 ID / 触控 ID 隐私保护"
+            "value": "扫描件 %@"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "Face ID / Touch ID 隱私保護"
+            "value": "掃描件 %@"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Face ID / Touch ID ロック"
+            "value": "スキャン%@"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Face ID / Touch ID 잠금 보호"
+            "value": "스캔 %@"
           }
         }
       }
     },
-    "default_cover_page_style": {
+    "search_country_prompt": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Default Cover Template"
+            "value": "Search country or code"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "默认封面样式"
+            "value": "搜索国家或代码"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "預設封面樣式"
+            "value": "搜尋國家或代碼"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "デフォルト送付状スタイル"
+            "value": "国名またはコードを検索"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "기본 표지 템플릿"
+            "value": "국가 또는 코드 검색"
+          }
+        }
+      }
+    },
+    "seconds_count": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d seconds"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 秒"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d 秒"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d秒"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d초"
+          }
+        }
+      }
+    },
+    "send_fax_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send Fax Now"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即发送传真"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即發送傳真"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今すぐFAXを送信"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 팩스 보내기"
+          }
+        }
+      }
+    },
+    "send_fax_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Fax"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新建传真"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新建傳真"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新規FAX"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 팩스"
           }
         }
       }
@@ -1770,6 +4660,312 @@
         }
       }
     },
+    "sent_timestamp": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sent Timestamp"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送时间"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳送時間"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信日時"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 시각"
+          }
+        }
+      }
+    },
+    "settings_fax_management": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fax Management"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传真管理"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳真管理"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FAX管理"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팩스 관리"
+          }
+        }
+      }
+    },
+    "settings_legal_info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legal & Information"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "法律与信息"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "法律與資訊"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "法務および情報"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "법적 고지 및 정보"
+          }
+        }
+      }
+    },
+    "settings_security_privacy": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Security & Privacy"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全与隐私"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全性與隱私權"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セキュリティとプライバシー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보안 및 개인정보"
+          }
+        }
+      }
+    },
+    "sign_document": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign Document"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加电子签名"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加電子簽名"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電子署名を追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전자 서명 추가"
+          }
+        }
+      }
+    },
+    "status_delivered": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delivered"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成功送达"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成功送達"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "配信完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 성공"
+          }
+        }
+      }
+    },
+    "status_dialing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dialing line..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在拨号..."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在撥號..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダイヤル中..."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결 중..."
+          }
+        }
+      }
+    },
+    "status_failed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送失败"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "發送失敗"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信失敗"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 실패"
+          }
+        }
+      }
+    },
+    "status_sending": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transmitting..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在传输..."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在傳輸..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通信中..."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 중..."
+          }
+        }
+      }
+    },
     "subject": {
       "localizations": {
         "en": {
@@ -1804,376 +5000,308 @@
         }
       }
     },
-    "notes_remarks": {
+    "subject_pages_format": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Notes / Remarks"
+            "value": "%@ • %d Pages"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "备注留言"
+            "value": "%@ • %d 页"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "備註留言"
+            "value": "%@ • %d 頁"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "備考・連絡事項"
+            "value": "%@ • %dページ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "비고 및 메모"
+            "value": "%@ • %d페이지"
           }
         }
       }
     },
-    "preview_pdf": {
+    "subtext_monthly": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Preview Fax Document"
+            "value": "Billed monthly"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "预览完整传真"
+            "value": "按月计费"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "預覽完整傳真"
+            "value": "按月計費"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "FAXプレビュー"
+            "value": "月額課金"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "팩스 미리보기"
+            "value": "월별 결제"
           }
         }
       }
     },
-    "delete": {
+    "subtext_weekly": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Delete"
+            "value": "3-day free trial included"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "删除"
+            "value": "含 3 天免费试用"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "刪除"
+            "value": "含 3 天免費試用"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "削除"
+            "value": "3日間の無料トライアル付き"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "삭제"
+            "value": "3일 무료 체험 포함"
           }
         }
       }
     },
-    "cancel": {
+    "subtext_yearly": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cancel"
+            "value": "Only $4.25/mo • Save 60%"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "取消"
+            "value": "仅 $4.25/月 • 立省 60%"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "取消"
+            "value": "僅 $4.25/月 • 立省 60%"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "キャンセル"
+            "value": "月額わずか$4.25 • 60%お得"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "취소"
+            "value": "월 $4.25 • 60% 절약"
           }
         }
       }
     },
-    "done": {
+    "tab_documents": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Done"
+            "value": "Documents"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "完成"
+            "value": "文档管理"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "完成"
+            "value": "文檔管理"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "完了"
+            "value": "ドキュメント"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "완료"
+            "value": "문서"
           }
         }
       }
     },
-    "save": {
+    "tab_history": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Save"
+            "value": "History"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "保存"
+            "value": "发送记录"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "儲存"
+            "value": "發送記錄"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "保存"
+            "value": "送信履歴"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "저장"
+            "value": "전송 내역"
           }
         }
       }
     },
-    "clear": {
+    "tab_send": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clear"
+            "value": "Send Fax"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "清除"
+            "value": "发送传真"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "清除"
+            "value": "發送傳真"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "クリア"
+            "value": "FAX送信"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "지우기"
+            "value": "팩스 보내기"
           }
         }
       }
     },
-    "add_signature": {
+    "tab_settings": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Add Signature"
+            "value": "Settings"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "添加签名"
+            "value": "设置"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "新增簽名"
+            "value": "設定"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "署名を追加"
+            "value": "設定"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "서명 추가"
+            "value": "설정"
           }
         }
       }
     },
-    "draw_signature_hint": {
+    "template": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Draw your signature using your finger or Apple Pencil"
+            "value": "Template"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用手指或 Apple Pencil 在此处书写签名"
+            "value": "模板"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用手指或 Apple Pencil 在此處書寫簽名"
+            "value": "範本"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "指またはApple Pencilで署名を記入してください"
+            "value": "テンプレート"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "손가락이나 Apple Pencil로 서명을 작성하세요"
-          }
-        }
-      }
-    },
-    "template_professional": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Professional"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "商务专业"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "商務專業"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ビジネス"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "비즈니스"
-          }
-        }
-      }
-    },
-    "template_modern": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Modern"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "现代风尚"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "現代風尚"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "モダン"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "모던"
+            "value": "템플릿"
           }
         }
       }
@@ -2212,6 +5340,108 @@
         }
       }
     },
+    "template_modern": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modern"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "现代风尚"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現代風尚"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モダン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모던"
+          }
+        }
+      }
+    },
+    "template_professional": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Professional"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "商务专业"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "商務專業"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビジネス"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비즈니스"
+          }
+        }
+      }
+    },
+    "template_style": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Template Style"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模板样式"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "範本樣式"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テンプレートスタイル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "템플릿 스타일"
+          }
+        }
+      }
+    },
     "template_urgent": {
       "localizations": {
         "en": {
@@ -2246,274 +5476,342 @@
         }
       }
     },
-    "filter_original": {
+    "terms_of_use": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Original"
+            "value": "Terms of Use"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "原图"
+            "value": "使用条款"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "原圖"
+            "value": "使用條款"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "オリジナル"
+            "value": "利用規約"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "원본"
+            "value": "이용약관"
           }
         }
       }
     },
-    "filter_bw": {
+    "transmission_log": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "B&W Fax"
+            "value": "Transmission Log"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "黑白传真"
+            "value": "传输日志"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "黑白傳真"
+            "value": "傳輸日誌"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "白黒FAX"
+            "value": "送信ログ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "흑백 팩스"
+            "value": "전송 로그"
           }
         }
       }
     },
-    "filter_grayscale": {
+    "transmission_step_delivered": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Grayscale"
+            "value": "Fax Delivered Successfully!"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "灰度清晰"
+            "value": "传真发送成功！"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "灰階清晰"
+            "value": "傳真傳送成功！"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "グレースケール"
+            "value": "FAXの送信に成功しました！"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "그레이스케일"
+            "value": "팩스 전송 성공!"
           }
         }
       }
     },
-    "filter_enhanced": {
+    "transmission_step_dialing": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enhanced Doc"
+            "value": "Dialing %@..."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "文档增强"
+            "value": "正在拨号 %@…"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "文檔增強"
+            "value": "正在撥號 %@…"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "文書強調"
+            "value": "%@にダイヤル中…"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "문서 최적화"
+            "value": "%@ 연결 중..."
           }
         }
       }
     },
-    "contacts_title": {
+    "transmission_step_preparing": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fax Contacts"
+            "value": "Preparing fax documents..."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "常用传真联系人"
+            "value": "正在准备传真文档…"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "常用傳真聯絡人"
+            "value": "正在準備傳真文件…"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "FAX連絡先"
+            "value": "FAX書類を準備中…"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "팩스 연락처"
+            "value": "팩스 문서 준비 중..."
           }
         }
       }
     },
-    "add_contact": {
+    "transmission_step_transmitting": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Add Contact"
+            "value": "Transmitting Page %d of %d..."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "添加联系人"
+            "value": "正在传输第 %d 页（共 %d 页）…"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "新增聯絡人"
+            "value": "正在傳輸第 %d 頁（共 %d 頁）…"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "連絡先を追加"
+            "value": "%d / %d ページを送信中…"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "연락처 추가"
+            "value": "%d / %d 페이지 전송 중..."
           }
         }
       }
     },
-    "no_history_title": {
+    "transmission_step_verifying": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "No Faxes Yet"
+            "value": "Awaiting handshake verification..."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "暂无发送记录"
+            "value": "等待握手验证…"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "暫無發送記錄"
+            "value": "等待交握驗證…"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送信履歴はありません"
+            "value": "ハンドシェイク検証を待機中…"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전송 내역이 없습니다"
+            "value": "핸드셰이크 확인 대기 중..."
           }
         }
       }
     },
-    "no_history_desc": {
+    "unlimited_subscription": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Your sent and in-progress faxes will appear here with delivery receipts."
+            "value": "Unlimited Active Subscription"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "您发送的传真及传输确认凭证将显示在此处。"
+            "value": "无限传真订阅已激活"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "您發送的傳真及傳輸確認憑證將顯示在此處。"
+            "value": "無限傳真訂閱已啟用"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "送信されたFAXおよび送信受領証がここに表示されます。"
+            "value": "無制限プラン利用中"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "보낸 팩스와 전송 영수증이 여기에 표시됩니다."
+            "value": "무제한 플랜 활성화됨"
+          }
+        }
+      }
+    },
+    "unlimited_subscriptions_tab": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlimited Subscriptions"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无限量订阅"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無限量訂閱"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使い放題サブスクリプション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "무제한 구독"
+          }
+        }
+      }
+    },
+    "view_receipt": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View Transmission Receipt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看传真发送凭证"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看傳真發送憑證"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送信受領証を表示"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전송 확인 영수증 보기"
           }
         }
       }

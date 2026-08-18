@@ -11,8 +11,8 @@ public struct CoverPageEditorView: View {
     public var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Template Style")) {
-                    Picker("Template", selection: $coverData.template) {
+                Section(header: Text("template_style")) {
+                    Picker("template", selection: $coverData.template) {
                         ForEach(CoverPageTemplate.allCases) { t in
                             Text(t.localizedKey).tag(t)
                         }
@@ -27,7 +27,7 @@ public struct CoverPageEditorView: View {
                 
                 Section(header: Text("recipient_section")) {
                     TextField("recipient_name_placeholder", text: $coverData.recipientName)
-                    TextField("Company / Organization", text: $coverData.recipientCompany)
+                    TextField("company_org_placeholder", text: $coverData.recipientCompany)
                 }
                 
                 Section(header: Text("subject")) {

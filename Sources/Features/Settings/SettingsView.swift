@@ -33,7 +33,7 @@ public struct SettingsView: View {
                         Spacer()
                         
                         Button(action: { showingPaywall = true }) {
-                            Text(storage.hasActiveSubscription ? "Manage" : "get_more_credits")
+                            Text(storage.hasActiveSubscription ? "manage" : "get_more_credits")
                                 .font(.caption)
                                 .fontWeight(.bold)
                                 .padding(.horizontal, 12)
@@ -46,13 +46,13 @@ public struct SettingsView: View {
                     .padding(.vertical, 6)
                 }
                 
-                Section(header: Text("Fax Management")) {
+                Section(header: Text("settings_fax_management")) {
                     NavigationLink(destination: ContactsListView()) {
                         Label("contacts_title", systemImage: "person.crop.circle")
                     }
                     
                     HStack {
-                        Label("Dedicated Fax Number", systemImage: "phone.badge.checkmark")
+                        Label("dedicated_fax_number", systemImage: "phone.badge.checkmark")
                         Spacer()
                         Text("+1 (800) 555-FAX1")
                             .font(.subheadline)
@@ -60,7 +60,7 @@ public struct SettingsView: View {
                     }
                 }
                 
-                Section(header: Text("Security & Privacy")) {
+                Section(header: Text("settings_security_privacy")) {
                     Toggle(isOn: $isFaceIDEnabled) {
                         Label("app_lock_biometric", systemImage: "faceid")
                     }
@@ -69,7 +69,7 @@ public struct SettingsView: View {
                     }
                 }
                 
-                Section(header: Text("Legal & Information")) {
+                Section(header: Text("settings_legal_info")) {
                     Button(action: {
                         Task { await StoreManager.shared.restorePurchases() }
                     }) {
@@ -85,7 +85,7 @@ public struct SettingsView: View {
                     }
                     
                     HStack {
-                        Label("App Version", systemImage: "info.circle")
+                        Label("app_version", systemImage: "info.circle")
                         Spacer()
                         Text("1.0.0 (Build 1)")
                             .foregroundColor(.secondary)

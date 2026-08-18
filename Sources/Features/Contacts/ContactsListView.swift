@@ -17,7 +17,7 @@ public struct ContactsListView: View {
                     Image(systemName: "person.crop.circle.badge.plus")
                         .font(.system(size: 48))
                         .foregroundColor(.secondary)
-                    Text("No saved contacts")
+                    Text("no_contacts_title")
                         .font(.headline)
                         .foregroundColor(.secondary)
                 }
@@ -97,15 +97,15 @@ public struct AddContactSheet: View {
     public var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Recipient Details")) {
-                    TextField("Recipient / Company Name", text: $name)
-                    TextField("Department / Org (Optional)", text: $organization)
+                Section(header: Text("recipient_details")) {
+                    TextField("contact_name_placeholder", text: $name)
+                    TextField("contact_org_placeholder", text: $organization)
                 }
                 
-                Section(header: Text("Fax Number")) {
+                Section(header: Text("fax_number")) {
                     Button(action: { showingCountryPicker = true }) {
                         HStack {
-                            Text("Country")
+                            Text("country")
                                 .foregroundColor(.primary)
                             Spacer()
                             Text("\(selectedCountry.flag) \(selectedCountry.name) (\(selectedCountry.dialCode))")
@@ -113,12 +113,12 @@ public struct AddContactSheet: View {
                         }
                     }
                     
-                    TextField("Fax Number", text: $faxNumber)
+                    TextField("fax_number", text: $faxNumber)
                         .keyboardType(.phonePad)
                 }
                 
                 Section {
-                    Toggle("Mark as Favorite", isOn: $isFavorite)
+                    Toggle("mark_favorite", isOn: $isFavorite)
                 }
             }
             .navigationTitle(Text("add_contact"))
@@ -130,7 +130,7 @@ public struct AddContactSheet: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("save") {
                         let contact = FaxRecipient(
-                            name: name.isEmpty ? "Contact" : name,
+                            name: name.isEmpty ? NSLocalizedString("default_contact_name", comment: "") : name,
                             organization: organization,
                             countryCode: selectedCountry.code,
                             dialCode: selectedCountry.dialCode,

@@ -41,9 +41,9 @@ public struct PaywallView: View {
                     .padding(.top, 10)
                     
                     // Tab Selector: Subscriptions vs Credits
-                    Picker("Options", selection: $selectedTab) {
-                        Text("Unlimited Subscriptions").tag(0)
-                        Text("Credit Packs").tag(1)
+                    Picker("options", selection: $selectedTab) {
+                        Text("unlimited_subscriptions_tab").tag(0)
+                        Text("credit_packs_tab").tag(1)
                     }
                     .pickerStyle(.segmented)
                     .padding(.horizontal)
@@ -62,15 +62,15 @@ public struct PaywallView: View {
                         
                         // Subscription Cards
                         VStack(spacing: 12) {
-                            PlanOptionCard(titleKey: "plan_yearly", price: "$50.99 / year", subtext: "Only $4.25/mo • Save 60%", isSelected: selectedPlanIndex == 2) {
+                            PlanOptionCard(titleKey: "plan_yearly", price: String(format: NSLocalizedString("price_per_year", comment: ""), "$50.99"), subtext: NSLocalizedString("subtext_yearly", comment: ""), isSelected: selectedPlanIndex == 2) {
                                 selectedPlanIndex = 2
                             }
                             
-                            PlanOptionCard(titleKey: "plan_weekly", price: "$3.99 / week", subtext: "3-day free trial included", isSelected: selectedPlanIndex == 0) {
+                            PlanOptionCard(titleKey: "plan_weekly", price: String(format: NSLocalizedString("price_per_week", comment: ""), "$3.99"), subtext: NSLocalizedString("subtext_weekly", comment: ""), isSelected: selectedPlanIndex == 0) {
                                 selectedPlanIndex = 0
                             }
                             
-                            PlanOptionCard(titleKey: "plan_monthly", price: "$9.99 / month", subtext: "Billed monthly", isSelected: selectedPlanIndex == 1) {
+                            PlanOptionCard(titleKey: "plan_monthly", price: String(format: NSLocalizedString("price_per_month", comment: ""), "$9.99"), subtext: NSLocalizedString("subtext_monthly", comment: ""), isSelected: selectedPlanIndex == 1) {
                                 selectedPlanIndex = 1
                             }
                         }
@@ -78,7 +78,7 @@ public struct PaywallView: View {
                     } else {
                         // Credit Pack Cards
                         VStack(spacing: 12) {
-                            CreditPackCard(titleKey: "credit_pack_100", price: "$34.99", perPage: "$0.35 per page", popular: true) {
+                            CreditPackCard(titleKey: "credit_pack_100", price: "$34.99", perPage: String(format: NSLocalizedString("price_per_page", comment: ""), "$0.35"), popular: true) {
                                 Task {
                                     if let p = store.products.first(where: { $0.id == StoreManager.ProductID.credits100.rawValue }) {
                                         _ = await store.purchase(p)
@@ -88,7 +88,7 @@ public struct PaywallView: View {
                                 }
                             }
                             
-                            CreditPackCard(titleKey: "credit_pack_50", price: "$19.99", perPage: "$0.40 per page", popular: false) {
+                            CreditPackCard(titleKey: "credit_pack_50", price: "$19.99", perPage: String(format: NSLocalizedString("price_per_page", comment: ""), "$0.40"), popular: false) {
                                 Task {
                                     if let p = store.products.first(where: { $0.id == StoreManager.ProductID.credits50.rawValue }) {
                                         _ = await store.purchase(p)
@@ -98,7 +98,7 @@ public struct PaywallView: View {
                                 }
                             }
                             
-                            CreditPackCard(titleKey: "credit_pack_10", price: "$4.99", perPage: "$0.50 per page", popular: false) {
+                            CreditPackCard(titleKey: "credit_pack_10", price: "$4.99", perPage: String(format: NSLocalizedString("price_per_page", comment: ""), "$0.50"), popular: false) {
                                 Task {
                                     if let p = store.products.first(where: { $0.id == StoreManager.ProductID.credits10.rawValue }) {
                                         _ = await store.purchase(p)
@@ -131,7 +131,7 @@ public struct PaywallView: View {
                                     ProgressView()
                                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
                                 } else {
-                                    Text("Continue")
+                                    Text("continue_button")
                                         .fontWeight(.bold)
                                 }
                             }
@@ -254,7 +254,7 @@ public struct CreditPackCard: View {
                     Text(titleKey)
                         .font(.headline)
                     if popular {
-                        Text("POPULAR")
+                        Text("badge_popular")
                             .font(.system(size: 9, weight: .black))
                             .padding(.horizontal, 6)
                             .padding(.vertical, 2)

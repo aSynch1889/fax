@@ -49,7 +49,7 @@ public struct CountryPickerView: View {
                     .padding(.vertical, 4)
                 }
             }
-            .searchable(text: $searchText, prompt: Text("Search country or code"))
+            .searchable(text: $searchText, prompt: Text("search_country_prompt"))
             .navigationTitle(Text("country_region"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

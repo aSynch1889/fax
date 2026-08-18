@@ -58,8 +58,8 @@ public final class PDFGenerator {
                 .foregroundColor: UIColor.secondaryLabel
             ]
             
-            "FAX TRANSMISSION RECEIPT".draw(at: CGPoint(x: 40, y: 50), withAttributes: titleAttributes)
-            "Official Delivery Confirmation & Log".draw(at: CGPoint(x: 40, y: 80), withAttributes: subtitleAttributes)
+            NSLocalizedString("pdf_receipt_title", comment: "").draw(at: CGPoint(x: 40, y: 50), withAttributes: titleAttributes)
+            NSLocalizedString("pdf_receipt_subtitle", comment: "").draw(at: CGPoint(x: 40, y: 80), withAttributes: subtitleAttributes)
             
             // Divider
             cg.setStrokeColor(UIColor.separator.cgColor)
@@ -74,15 +74,15 @@ public final class PDFGenerator {
             
             var y: CGFloat = 135
             let items: [(String, String)] = [
-                ("Confirmation Code:", record.confirmationCode),
-                ("Recipient:", record.recipient.name.isEmpty ? "Direct Fax Line" : record.recipient.name),
-                ("Destination Number:", record.recipient.formattedFullNumber),
-                ("Country:", record.recipient.countryCode),
-                ("Transmission Status:", record.status == .delivered ? "DELIVERED (SUCCESS)" : "FAILED"),
-                ("Pages Sent:", "\(record.pageCount) Pages"),
-                ("Sent Timestamp:", DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium)),
-                ("Duration:", "\(record.transmissionDurationSeconds) seconds"),
-                ("Subject:", record.subject.isEmpty ? "N/A" : record.subject)
+                (NSLocalizedString("pdf_field_confirmation_code", comment: ""), record.confirmationCode),
+                (NSLocalizedString("pdf_field_recipient", comment: ""), record.recipient.name.isEmpty ? NSLocalizedString("direct_fax_line", comment: "") : record.recipient.name),
+                (NSLocalizedString("pdf_field_destination", comment: ""), record.recipient.formattedFullNumber),
+                (NSLocalizedString("pdf_field_country", comment: ""), record.recipient.countryCode),
+                (NSLocalizedString("pdf_field_status", comment: ""), record.status == .delivered ? NSLocalizedString("pdf_status_success", comment: "") : NSLocalizedString("pdf_status_failed", comment: "")),
+                (NSLocalizedString("pdf_field_pages", comment: ""), String(format: NSLocalizedString("pages_count", comment: ""), record.pageCount)),
+                (NSLocalizedString("pdf_field_timestamp", comment: ""), DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium)),
+                (NSLocalizedString("pdf_field_duration", comment: ""), String(format: NSLocalizedString("seconds_count", comment: ""), record.transmissionDurationSeconds)),
+                (NSLocalizedString("pdf_field_subject", comment: ""), record.subject.isEmpty ? NSLocalizedString("not_available", comment: "") : record.subject)
             ]
             
             for (key, val) in items {
@@ -99,7 +99,7 @@ public final class PDFGenerator {
             cg.setLineWidth(2)
             cg.stroke(sealRect)
             
-            let statusText = record.status == .delivered ? "VERIFIED" : "ERROR"
+            let statusText = record.status == .delivered ? NSLocalizedString("pdf_seal_verified", comment: "") : NSLocalizedString("pdf_seal_error", comment: "")
             let statusAttr: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 16, weight: .black),
                 .foregroundColor: record.status == .delivered ? UIColor.systemGreen : UIColor.systemRed
@@ -112,7 +112,7 @@ public final class PDFGenerator {
                 .font: UIFont.systemFont(ofSize: 11, weight: .regular),
                 .foregroundColor: UIColor.tertiaryLabel
             ]
-            "Generated cryptographically by FaxFlow Secure Transmission Gateway.".draw(at: CGPoint(x: 40, y: standardPageSize.height - 60), withAttributes: footerAttr)
+            NSLocalizedString("pdf_footer_notice", comment: "").draw(at: CGPoint(x: 40, y: standardPageSize.height - 60), withAttributes: footerAttr)
         }
     }
     
@@ -133,18 +133,18 @@ public final class PDFGenerator {
             context.setFillColor(UIColor.systemRed.withAlphaComponent(0.12).cgColor)
             context.fill(CGRect(x: margin, y: y, width: contentWidth, height: 44))
             let urgentAttr: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 18, weight: .black), .foregroundColor: UIColor.systemRed]
-            "URGENT PRIORITY FACSIMILE".draw(at: CGPoint(x: margin + 12, y: y + 10), withAttributes: urgentAttr)
+            NSLocalizedString("pdf_cover_urgent", comment: "").draw(at: CGPoint(x: margin + 12, y: y + 10), withAttributes: urgentAttr)
             y += 60
         case .professional:
-            "FACSIMILE TRANSMITTAL".draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
+            NSLocalizedString("pdf_cover_professional", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
             y += 36
-            "STANDARD BUSINESS COVER".draw(at: CGPoint(x: margin, y: y), withAttributes: subTitleFont)
+            NSLocalizedString("pdf_cover_professional_sub", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: subTitleFont)
             y += 30
         case .modern:
-            "FAX TRANSMISSION".draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
+            NSLocalizedString("pdf_cover_modern", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
             y += 40
         case .minimal:
-            "FAX COVER".draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
+            NSLocalizedString("pdf_cover_minimal", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
             y += 36
         }
         
@@ -161,22 +161,22 @@ public final class PDFGenerator {
         let col2X = margin + contentWidth / 2
         
         // TO section
-        "TO:".draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
-        (data.recipientName.isEmpty ? "Recipient" : data.recipientName).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
+        NSLocalizedString("pdf_label_to", comment: "").draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
+        (data.recipientName.isEmpty ? NSLocalizedString("pdf_default_recipient", comment: "") : data.recipientName).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
         
         // FROM section
-        "FROM:".draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
-        (data.senderName.isEmpty ? "Sender" : data.senderName).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
+        NSLocalizedString("pdf_label_from", comment: "").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
+        (data.senderName.isEmpty ? NSLocalizedString("pdf_default_sender", comment: "") : data.senderName).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
         y += 26
         
-        "PHONE:".draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
-        (data.senderPhone.isEmpty ? "N/A" : data.senderPhone).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
+        NSLocalizedString("pdf_label_phone", comment: "").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
+        (data.senderPhone.isEmpty ? NSLocalizedString("not_available", comment: "") : data.senderPhone).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
         y += 26
         
-        "PAGES:".draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
-        "\(totalDocPages) (Including Cover)".draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
+        NSLocalizedString("pdf_label_pages", comment: "").draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
+        String(format: NSLocalizedString("pdf_pages_including_cover", comment: ""), totalDocPages).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
         
-        "DATE:".draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
+        NSLocalizedString("pdf_label_date", comment: "").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
         DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .none).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
         y += 35
         
@@ -188,12 +188,12 @@ public final class PDFGenerator {
         context.strokePath()
         y += 15
         
-        "SUBJECT:".draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
-        (data.subject.isEmpty ? "Fax Document Transmission" : data.subject).draw(at: CGPoint(x: margin + 70, y: y), withAttributes: valFont)
+        NSLocalizedString("pdf_label_subject", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
+        (data.subject.isEmpty ? NSLocalizedString("pdf_default_subject", comment: "") : data.subject).draw(at: CGPoint(x: margin + 70, y: y), withAttributes: valFont)
         y += 35
         
         // Notes Box
-        "REMARKS & NOTES:".draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
+        NSLocalizedString("pdf_label_remarks", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
         y += 20
         
         let notesRect = CGRect(x: margin, y: y, width: contentWidth, height: 260)
@@ -201,7 +201,7 @@ public final class PDFGenerator {
         context.setLineWidth(1)
         context.stroke(notesRect)
         
-        let notesText = data.notes.isEmpty ? "Please review the attached pages. Should any transmission issues occur, please contact sender." : data.notes
+        let notesText = data.notes.isEmpty ? NSLocalizedString("pdf_default_notes", comment: "") : data.notes
         let notesAttr: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 12, weight: .regular), .foregroundColor: UIColor.label]
         notesText.draw(in: notesRect.insetBy(dx: 12, dy: 12), withAttributes: notesAttr)
     }
