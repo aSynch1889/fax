@@ -24,5 +24,6 @@
 | Feature.Paywall | Sources/Features/Paywall/PaywallView.swift | StoreKit 2 subscriptions & credit packs purchase sheet | StoreKit, SwiftUI | Completed |
 | Feature.Settings | Sources/Features/Settings/SettingsView.swift | Balance display, Face ID toggle, terms & privacy links | LocalAuthentication, SwiftUI | Completed |
 | Feature.Settings.Language | Sources/Features/Settings/LanguageSettingsView.swift | In-app language picker with instant switching | LanguageManager, SwiftUI | Completed |
+| Feature.Settings.Appearance | Sources/Features/Settings/AppearanceSettingsView.swift | In-app light / dark / system appearance picker with instant switching | AppearanceManager, SwiftUI | Completed |
 | Resources.Localization | Resources/Localizable.xcstrings | 5 languages: en, zh-Hans, zh-Hant, ja, ko | String Catalog | Completed |
 | Resources.Assets | Resources/Assets.xcassets | AppIcon, AccentColor, Color Sets | Asset Catalog | Completed |

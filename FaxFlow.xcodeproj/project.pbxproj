@@ -11,6 +11,7 @@
 		1F7291A3F9E530E342B8A0B4 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD530D2881D111081489CFC /* LanguageManager.swift */; };
 		20E5EE98C667BBA1C57A655D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CEE8C55A69E87E63D6A264D3 /* Localizable.xcstrings */; };
 		3466C83BFA2F4243F3406139 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F0A6016152878A6A88651 /* PDFGenerator.swift */; };
+		391933124187F6A6ECBCDD2D /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6835E2D0450408219474E9C6 /* AppearanceManager.swift */; };
 		3B70EF8090F7C97AFC3B0A26 /* FaxTransmissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D205297BB02123B2F0976 /* FaxTransmissionService.swift */; };
 		3C214066F508EA1623D010A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3623239C2852C9AEBBB6E543 /* Assets.xcassets */; };
 		3D30D691FB830E9267DA38D5 /* SignaturePadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C59FD7A49333D62B88C9D /* SignaturePadView.swift */; };
@@ -20,6 +21,7 @@
 		5D8AE26A2114B07086EBA7E2 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06BCD2D603CF6811999B67B /* CountryPickerView.swift */; };
 		5E0162D4638282E49C5D779D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA974FF915D64DE95334F86D /* AppTheme.swift */; };
 		7896FB24418D91B08D303E66 /* DocumentScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EACCF73031B6BB0F25F1E5 /* DocumentScannerCoordinator.swift */; };
+		789A7422234B128EF0AE204C /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8AE2B0368C7861E53630 /* AppearanceSettingsView.swift */; };
 		87BC457547ACEE39BEBECA8C /* ImageFilterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA814AEDDC98CFFEBD7A9D40 /* ImageFilterUtility.swift */; };
 		8CDE23551BFE4582220FA341 /* LanguageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0E6CF714283EFD04E2345 /* LanguageSettingsView.swift */; };
 		8E34A2C311C03804D3B68C55 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42A260F60AC9E561B706F9 /* HistoryListView.swift */; };
@@ -39,9 +41,11 @@
 		0407A62E0CF3D6A540954B75 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1652286DDB0DC5D310F17B42 /* FaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxApp.swift; sourceTree = "<group>"; };
 		3623239C2852C9AEBBB6E543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E8D8AE2B0368C7861E53630 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettingsView.swift; sourceTree = "<group>"; };
 		4FCB294365222328BAA290C0 /* CountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManager.swift; sourceTree = "<group>"; };
 		543B9ED540A1D750E7523910 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		608D205297BB02123B2F0976 /* FaxTransmissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxTransmissionService.swift; sourceTree = "<group>"; };
+		6835E2D0450408219474E9C6 /* AppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
 		68A9558D246554AD89B84366 /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
 		70E59C97C62DA18D6A3BE7D3 /* CoverPageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverPageEditorView.swift; sourceTree = "<group>"; };
 		76B7205BE25B05E56F90AB71 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		36474605BE8FDE75E732EB6F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				4E8D8AE2B0368C7861E53630 /* AppearanceSettingsView.swift */,
 				F2F0E6CF714283EFD04E2345 /* LanguageSettingsView.swift */,
 				A35D14280A1DC8EFB949416E /* SettingsView.swift */,
 			);
@@ -181,6 +186,7 @@
 		9DE3EF2BE3D2CA2B5CD2180B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				6835E2D0450408219474E9C6 /* AppearanceManager.swift */,
 				DD68E78C8F4126CAAF514377 /* AppState.swift */,
 				1652286DDB0DC5D310F17B42 /* FaxApp.swift */,
 				DFD530D2881D111081489CFC /* LanguageManager.swift */,
@@ -353,6 +359,8 @@
 			files = (
 				41B876DA6A1A83A95627998A /* AppState.swift in Sources */,
 				5E0162D4638282E49C5D779D /* AppTheme.swift in Sources */,
+				391933124187F6A6ECBCDD2D /* AppearanceManager.swift in Sources */,
+				789A7422234B128EF0AE204C /* AppearanceSettingsView.swift in Sources */,
 				D34DBD6848F84719CA863A27 /* ContactsListView.swift in Sources */,
 				B07E4FE98D39AC96787669CE /* CountryManager.swift in Sources */,
 				5D8AE26A2114B07086EBA7E2 /* CountryPickerView.swift in Sources */,

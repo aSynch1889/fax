@@ -4,6 +4,7 @@ import LocalAuthentication
 public struct SettingsView: View {
     @ObservedObject var storage = StorageManager.shared
     @ObservedObject private var languageManager = LanguageManager.shared
+    @ObservedObject private var appearanceManager = AppearanceManager.shared
     @State private var isFaceIDEnabled: Bool = UserDefaults.standard.bool(forKey: "UseFaceIDLock")
     @State private var showingPaywall = false
 
@@ -70,6 +71,15 @@ public struct SettingsView: View {
                 }
 
                 Section(header: Text("settings_general")) {
+                    NavigationLink(destination: AppearanceSettingsView()) {
+                        HStack {
+                            Label("settings_appearance", systemImage: "circle.lefthalf.filled")
+                            Spacer()
+                            Text(appearanceManager.current.displayName)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+
                     NavigationLink(destination: LanguageSettingsView()) {
                         HStack {
                             Label("settings_language", systemImage: "globe")

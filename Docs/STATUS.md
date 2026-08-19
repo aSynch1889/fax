@@ -8,7 +8,7 @@
 - VisionKit Scanner: Hardware Document Scanner (PASS)
 - PDFKit Compiler: Multi-page PDF + Receipt Engine (PASS)
 - PencilKit Signature: Hand-drawn E-Signatures (PASS)
-- Dark & Light Mode: Semantic System Color Adaptation (PASS)
+- Dark & Light Mode: Semantic Colors + In-App Appearance Switcher (PASS)
 - Privacy Web Deployment: Standalone GitHub Pages Structure (PASS)
 - Screenshot Mock Mode: Automated Screenshot Data Injection (PASS)
 
@@ -56,6 +56,24 @@ Scope: settings entry → language picker second-level page with instant switchi
   `.toolbar(.hidden, for: .tabBar)` (LanguageSettingsView, ContactsListView)
 - Catalog: +4 keys (`settings_general`, `settings_language`,
   `language_follow_system`, `language_change_note`) → 181 total
+- Rebuild: `xcodegen generate` + iPhone 17 Simulator build → BUILD SUCCEEDED
+
+## 5. In-App Appearance Switching (2026-08-19)
+Scope: settings entry → appearance picker second-level page (mirror of the
+language-switching pattern).
+
+- New `AppearanceManager` (`Sources/App/AppearanceManager.swift`):
+  `AppAppearance` enum (system / light / dark), preference persisted in
+  UserDefaults (`AppAppearancePreference`)
+- Root-level `.preferredColorScheme(...)` in `FaxApp` applies the choice to
+  the whole view tree (nil = follow the system); all screens already use
+  semantic colors, so both schemes remain readable
+- New `AppearanceSettingsView`: checkmark picker, immediate apply, footer
+  note, tab bar hidden via `.toolbar(.hidden, for: .tabBar)`
+- `SettingsView` General section gains an Appearance row (above Language)
+  showing the current selection
+- Catalog: +5 keys (`settings_appearance`, `appearance_follow_system`,
+  `appearance_light`, `appearance_dark`, `appearance_change_note`) → 186 total
 - Rebuild: `xcodegen generate` + iPhone 17 Simulator build → BUILD SUCCEEDED
 
 ### Known follow-ups (P2)
