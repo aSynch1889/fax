@@ -132,7 +132,7 @@ public struct DocumentEditorView: View {
                 }
             }
         }
-        .navigationTitle(document.title.isEmpty ? NSLocalizedString("edit_document", comment: "") : document.title)
+        .navigationTitle(document.title.isEmpty ? L10n.s("edit_document") : document.title)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -193,7 +193,7 @@ public struct PageDetailCard: View {
     
     public var body: some View {
         VStack(spacing: 8) {
-            Text(String(format: NSLocalizedString("page_x_of_y", comment: ""), pageNumber, totalPages))
+            Text(String(format: L10n.s("page_x_of_y"), pageNumber, totalPages))
                 .font(.caption)
                 .foregroundColor(.secondary)
             

@@ -72,6 +72,8 @@ public struct ContactsListView: View {
             }
         }
         .navigationTitle(Text("contacts_title"))
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .tabBar)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: { showingAddSheet = true }) {
@@ -130,7 +132,7 @@ public struct AddContactSheet: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("save") {
                         let contact = FaxRecipient(
-                            name: name.isEmpty ? NSLocalizedString("default_contact_name", comment: "") : name,
+                            name: name.isEmpty ? L10n.s("default_contact_name") : name,
                             organization: organization,
                             countryCode: selectedCountry.code,
                             dialCode: selectedCountry.dialCode,

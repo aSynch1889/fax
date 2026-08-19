@@ -37,6 +37,27 @@ Scope: eliminated all hardcoded user-visible strings found by a full-source audi
   page indexes, `•` separators
 - Rebuild: `xcodegen generate` + iPhone 17 Simulator build → BUILD SUCCEEDED
 
+## 4. In-App Language Switching (2026-08-19)
+Scope: settings entry → language picker second-level page with instant switching.
+
+- New `LanguageManager` (`Sources/App/LanguageManager.swift`): `AppLanguage`
+  enum (system / en / zh-Hans / zh-Hant / ja / ko), preference persisted in
+  UserDefaults (`AppLanguagePreference`) and mirrored to `AppleLanguages`
+- `L10n.s()` dynamic-bundle helper replaces all 61 `NSLocalizedString` calls,
+  so non-View strings (PDF engine, service step text, alerts) switch instantly
+  without an app restart
+- Root-level `.environment(\.locale, ...)` in `FaxApp` makes every
+  `Text("key")` re-resolve on selection change
+- New `LanguageSettingsView`: checkmark picker, options rendered in their own
+  language, immediate apply, footer note
+- `SettingsView` migrated `NavigationView` → `NavigationStack`, added
+  通用/General section with Language row showing current selection
+- Tab bar hidden on pushed second-level pages via
+  `.toolbar(.hidden, for: .tabBar)` (LanguageSettingsView, ContactsListView)
+- Catalog: +4 keys (`settings_general`, `settings_language`,
+  `language_follow_system`, `language_change_note`) → 181 total
+- Rebuild: `xcodegen generate` + iPhone 17 Simulator build → BUILD SUCCEEDED
+
 ### Known follow-ups (P2)
 - Country names in CountryManager are English-only data (~200 entries);
   localization would require a per-language country name table

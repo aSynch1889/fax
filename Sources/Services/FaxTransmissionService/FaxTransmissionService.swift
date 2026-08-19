@@ -30,7 +30,7 @@ public final class FaxTransmissionService: ObservableObject {
         self.activeTransmission = record
         self.isTransmitting = true
         self.transmissionProgress = 0.05
-        self.currentStepText = NSLocalizedString("transmission_step_preparing", comment: "")
+        self.currentStepText = L10n.s("transmission_step_preparing")
         
         // 1. Generate multi-page PDF
         let pdfData = PDFGenerator.generatePDF(for: document, pagesImages: pageImages)
@@ -44,7 +44,7 @@ public final class FaxTransmissionService: ObservableObject {
         StorageManager.shared.updateHistoryRecord(updated)
         self.activeTransmission = updated
         self.transmissionProgress = 0.25
-        self.currentStepText = String(format: NSLocalizedString("transmission_step_dialing", comment: ""), recipient.formattedFullNumber)
+        self.currentStepText = String(format: L10n.s("transmission_step_dialing"), recipient.formattedFullNumber)
         
         try? await Task.sleep(nanoseconds: 1_500_000_000)
         
@@ -54,7 +54,7 @@ public final class FaxTransmissionService: ObservableObject {
         self.activeTransmission = updated
         
         for i in 1...totalPages {
-            self.currentStepText = String(format: NSLocalizedString("transmission_step_transmitting", comment: ""), i, totalPages)
+            self.currentStepText = String(format: L10n.s("transmission_step_transmitting"), i, totalPages)
             let progressFraction = 0.25 + (Double(i) / Double(totalPages)) * 0.55
             self.transmissionProgress = progressFraction
             try? await Task.sleep(nanoseconds: 1_200_000_000)
@@ -62,7 +62,7 @@ public final class FaxTransmissionService: ObservableObject {
         
         // 4. Verification & Confirmation Receipt
         self.transmissionProgress = 0.92
-        self.currentStepText = NSLocalizedString("transmission_step_verifying", comment: "")
+        self.currentStepText = L10n.s("transmission_step_verifying")
         try? await Task.sleep(nanoseconds: 1_000_000_000)
         
         updated.status = .delivered
@@ -79,7 +79,7 @@ public final class FaxTransmissionService: ObservableObject {
         StorageManager.shared.updateHistoryRecord(updated)
         self.activeTransmission = updated
         self.transmissionProgress = 1.0
-        self.currentStepText = NSLocalizedString("transmission_step_delivered", comment: "")
+        self.currentStepText = L10n.s("transmission_step_delivered")
         
         try? await Task.sleep(nanoseconds: 800_000_000)
         self.isTransmitting = false

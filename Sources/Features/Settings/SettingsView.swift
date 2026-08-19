@@ -3,14 +3,14 @@ import LocalAuthentication
 
 public struct SettingsView: View {
     @ObservedObject var storage = StorageManager.shared
+    @ObservedObject private var languageManager = LanguageManager.shared
     @State private var isFaceIDEnabled: Bool = UserDefaults.standard.bool(forKey: "UseFaceIDLock")
     @State private var showingPaywall = false
-    @State private var showingContacts = false
-    
+
     public init() {}
-    
+
     public var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 // Balance & Subscription Card Section
                 Section {
@@ -24,7 +24,7 @@ public struct SettingsView: View {
                                 .font(.headline)
                             
                             if !storage.hasActiveSubscription {
-                                Text(String(format: NSLocalizedString("credits_count", comment: ""), storage.availableCredits))
+                                Text(String(format: L10n.s("credits_count"), storage.availableCredits))
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                             }
@@ -68,7 +68,18 @@ public struct SettingsView: View {
                         UserDefaults.standard.set(newValue, forKey: "UseFaceIDLock")
                     }
                 }
-                
+
+                Section(header: Text("settings_general")) {
+                    NavigationLink(destination: LanguageSettingsView()) {
+                        HStack {
+                            Label("settings_language", systemImage: "globe")
+                            Spacer()
+                            Text(languageManager.current.displayName)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
+
                 Section(header: Text("settings_legal_info")) {
                     Button(action: {
                         Task { await StoreManager.shared.restorePurchases() }

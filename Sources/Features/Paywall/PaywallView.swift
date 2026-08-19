@@ -62,15 +62,15 @@ public struct PaywallView: View {
                         
                         // Subscription Cards
                         VStack(spacing: 12) {
-                            PlanOptionCard(titleKey: "plan_yearly", price: String(format: NSLocalizedString("price_per_year", comment: ""), "$50.99"), subtext: NSLocalizedString("subtext_yearly", comment: ""), isSelected: selectedPlanIndex == 2) {
+                            PlanOptionCard(titleKey: "plan_yearly", price: String(format: L10n.s("price_per_year"), "$50.99"), subtext: L10n.s("subtext_yearly"), isSelected: selectedPlanIndex == 2) {
                                 selectedPlanIndex = 2
                             }
                             
-                            PlanOptionCard(titleKey: "plan_weekly", price: String(format: NSLocalizedString("price_per_week", comment: ""), "$3.99"), subtext: NSLocalizedString("subtext_weekly", comment: ""), isSelected: selectedPlanIndex == 0) {
+                            PlanOptionCard(titleKey: "plan_weekly", price: String(format: L10n.s("price_per_week"), "$3.99"), subtext: L10n.s("subtext_weekly"), isSelected: selectedPlanIndex == 0) {
                                 selectedPlanIndex = 0
                             }
                             
-                            PlanOptionCard(titleKey: "plan_monthly", price: String(format: NSLocalizedString("price_per_month", comment: ""), "$9.99"), subtext: NSLocalizedString("subtext_monthly", comment: ""), isSelected: selectedPlanIndex == 1) {
+                            PlanOptionCard(titleKey: "plan_monthly", price: String(format: L10n.s("price_per_month"), "$9.99"), subtext: L10n.s("subtext_monthly"), isSelected: selectedPlanIndex == 1) {
                                 selectedPlanIndex = 1
                             }
                         }
@@ -78,7 +78,7 @@ public struct PaywallView: View {
                     } else {
                         // Credit Pack Cards
                         VStack(spacing: 12) {
-                            CreditPackCard(titleKey: "credit_pack_100", price: "$34.99", perPage: String(format: NSLocalizedString("price_per_page", comment: ""), "$0.35"), popular: true) {
+                            CreditPackCard(titleKey: "credit_pack_100", price: "$34.99", perPage: String(format: L10n.s("price_per_page"), "$0.35"), popular: true) {
                                 Task {
                                     if let p = store.products.first(where: { $0.id == StoreManager.ProductID.credits100.rawValue }) {
                                         _ = await store.purchase(p)
@@ -88,7 +88,7 @@ public struct PaywallView: View {
                                 }
                             }
                             
-                            CreditPackCard(titleKey: "credit_pack_50", price: "$19.99", perPage: String(format: NSLocalizedString("price_per_page", comment: ""), "$0.40"), popular: false) {
+                            CreditPackCard(titleKey: "credit_pack_50", price: "$19.99", perPage: String(format: L10n.s("price_per_page"), "$0.40"), popular: false) {
                                 Task {
                                     if let p = store.products.first(where: { $0.id == StoreManager.ProductID.credits50.rawValue }) {
                                         _ = await store.purchase(p)
@@ -98,7 +98,7 @@ public struct PaywallView: View {
                                 }
                             }
                             
-                            CreditPackCard(titleKey: "credit_pack_10", price: "$4.99", perPage: String(format: NSLocalizedString("price_per_page", comment: ""), "$0.50"), popular: false) {
+                            CreditPackCard(titleKey: "credit_pack_10", price: "$4.99", perPage: String(format: L10n.s("price_per_page"), "$0.50"), popular: false) {
                                 Task {
                                     if let p = store.products.first(where: { $0.id == StoreManager.ProductID.credits10.rawValue }) {
                                         _ = await store.purchase(p)

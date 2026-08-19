@@ -58,8 +58,8 @@ public final class PDFGenerator {
                 .foregroundColor: UIColor.secondaryLabel
             ]
             
-            NSLocalizedString("pdf_receipt_title", comment: "").draw(at: CGPoint(x: 40, y: 50), withAttributes: titleAttributes)
-            NSLocalizedString("pdf_receipt_subtitle", comment: "").draw(at: CGPoint(x: 40, y: 80), withAttributes: subtitleAttributes)
+            L10n.s("pdf_receipt_title").draw(at: CGPoint(x: 40, y: 50), withAttributes: titleAttributes)
+            L10n.s("pdf_receipt_subtitle").draw(at: CGPoint(x: 40, y: 80), withAttributes: subtitleAttributes)
             
             // Divider
             cg.setStrokeColor(UIColor.separator.cgColor)
@@ -74,15 +74,15 @@ public final class PDFGenerator {
             
             var y: CGFloat = 135
             let items: [(String, String)] = [
-                (NSLocalizedString("pdf_field_confirmation_code", comment: ""), record.confirmationCode),
-                (NSLocalizedString("pdf_field_recipient", comment: ""), record.recipient.name.isEmpty ? NSLocalizedString("direct_fax_line", comment: "") : record.recipient.name),
-                (NSLocalizedString("pdf_field_destination", comment: ""), record.recipient.formattedFullNumber),
-                (NSLocalizedString("pdf_field_country", comment: ""), record.recipient.countryCode),
-                (NSLocalizedString("pdf_field_status", comment: ""), record.status == .delivered ? NSLocalizedString("pdf_status_success", comment: "") : NSLocalizedString("pdf_status_failed", comment: "")),
-                (NSLocalizedString("pdf_field_pages", comment: ""), String(format: NSLocalizedString("pages_count", comment: ""), record.pageCount)),
-                (NSLocalizedString("pdf_field_timestamp", comment: ""), DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium)),
-                (NSLocalizedString("pdf_field_duration", comment: ""), String(format: NSLocalizedString("seconds_count", comment: ""), record.transmissionDurationSeconds)),
-                (NSLocalizedString("pdf_field_subject", comment: ""), record.subject.isEmpty ? NSLocalizedString("not_available", comment: "") : record.subject)
+                (L10n.s("pdf_field_confirmation_code"), record.confirmationCode),
+                (L10n.s("pdf_field_recipient"), record.recipient.name.isEmpty ? L10n.s("direct_fax_line") : record.recipient.name),
+                (L10n.s("pdf_field_destination"), record.recipient.formattedFullNumber),
+                (L10n.s("pdf_field_country"), record.recipient.countryCode),
+                (L10n.s("pdf_field_status"), record.status == .delivered ? L10n.s("pdf_status_success") : L10n.s("pdf_status_failed")),
+                (L10n.s("pdf_field_pages"), String(format: L10n.s("pages_count"), record.pageCount)),
+                (L10n.s("pdf_field_timestamp"), DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium)),
+                (L10n.s("pdf_field_duration"), String(format: L10n.s("seconds_count"), record.transmissionDurationSeconds)),
+                (L10n.s("pdf_field_subject"), record.subject.isEmpty ? L10n.s("not_available") : record.subject)
             ]
             
             for (key, val) in items {
@@ -99,7 +99,7 @@ public final class PDFGenerator {
             cg.setLineWidth(2)
             cg.stroke(sealRect)
             
-            let statusText = record.status == .delivered ? NSLocalizedString("pdf_seal_verified", comment: "") : NSLocalizedString("pdf_seal_error", comment: "")
+            let statusText = record.status == .delivered ? L10n.s("pdf_seal_verified") : L10n.s("pdf_seal_error")
             let statusAttr: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 16, weight: .black),
                 .foregroundColor: record.status == .delivered ? UIColor.systemGreen : UIColor.systemRed
@@ -112,7 +112,7 @@ public final class PDFGenerator {
                 .font: UIFont.systemFont(ofSize: 11, weight: .regular),
                 .foregroundColor: UIColor.tertiaryLabel
             ]
-            NSLocalizedString("pdf_footer_notice", comment: "").draw(at: CGPoint(x: 40, y: standardPageSize.height - 60), withAttributes: footerAttr)
+            L10n.s("pdf_footer_notice").draw(at: CGPoint(x: 40, y: standardPageSize.height - 60), withAttributes: footerAttr)
         }
     }
     
@@ -133,18 +133,18 @@ public final class PDFGenerator {
             context.setFillColor(UIColor.systemRed.withAlphaComponent(0.12).cgColor)
             context.fill(CGRect(x: margin, y: y, width: contentWidth, height: 44))
             let urgentAttr: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 18, weight: .black), .foregroundColor: UIColor.systemRed]
-            NSLocalizedString("pdf_cover_urgent", comment: "").draw(at: CGPoint(x: margin + 12, y: y + 10), withAttributes: urgentAttr)
+            L10n.s("pdf_cover_urgent").draw(at: CGPoint(x: margin + 12, y: y + 10), withAttributes: urgentAttr)
             y += 60
         case .professional:
-            NSLocalizedString("pdf_cover_professional", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
+            L10n.s("pdf_cover_professional").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
             y += 36
-            NSLocalizedString("pdf_cover_professional_sub", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: subTitleFont)
+            L10n.s("pdf_cover_professional_sub").draw(at: CGPoint(x: margin, y: y), withAttributes: subTitleFont)
             y += 30
         case .modern:
-            NSLocalizedString("pdf_cover_modern", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
+            L10n.s("pdf_cover_modern").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
             y += 40
         case .minimal:
-            NSLocalizedString("pdf_cover_minimal", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
+            L10n.s("pdf_cover_minimal").draw(at: CGPoint(x: margin, y: y), withAttributes: titleFont)
             y += 36
         }
         
@@ -161,22 +161,22 @@ public final class PDFGenerator {
         let col2X = margin + contentWidth / 2
         
         // TO section
-        NSLocalizedString("pdf_label_to", comment: "").draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
-        (data.recipientName.isEmpty ? NSLocalizedString("pdf_default_recipient", comment: "") : data.recipientName).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
+        L10n.s("pdf_label_to").draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
+        (data.recipientName.isEmpty ? L10n.s("pdf_default_recipient") : data.recipientName).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
         
         // FROM section
-        NSLocalizedString("pdf_label_from", comment: "").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
-        (data.senderName.isEmpty ? NSLocalizedString("pdf_default_sender", comment: "") : data.senderName).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
+        L10n.s("pdf_label_from").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
+        (data.senderName.isEmpty ? L10n.s("pdf_default_sender") : data.senderName).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
         y += 26
         
-        NSLocalizedString("pdf_label_phone", comment: "").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
-        (data.senderPhone.isEmpty ? NSLocalizedString("not_available", comment: "") : data.senderPhone).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
+        L10n.s("pdf_label_phone").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
+        (data.senderPhone.isEmpty ? L10n.s("not_available") : data.senderPhone).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
         y += 26
         
-        NSLocalizedString("pdf_label_pages", comment: "").draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
-        String(format: NSLocalizedString("pdf_pages_including_cover", comment: ""), totalDocPages).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
+        L10n.s("pdf_label_pages").draw(at: CGPoint(x: col1X, y: y), withAttributes: labelFont)
+        String(format: L10n.s("pdf_pages_including_cover"), totalDocPages).draw(at: CGPoint(x: col1X + 50, y: y), withAttributes: valFont)
         
-        NSLocalizedString("pdf_label_date", comment: "").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
+        L10n.s("pdf_label_date").draw(at: CGPoint(x: col2X, y: y), withAttributes: labelFont)
         DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .none).draw(at: CGPoint(x: col2X + 55, y: y), withAttributes: valFont)
         y += 35
         
@@ -188,12 +188,12 @@ public final class PDFGenerator {
         context.strokePath()
         y += 15
         
-        NSLocalizedString("pdf_label_subject", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
-        (data.subject.isEmpty ? NSLocalizedString("pdf_default_subject", comment: "") : data.subject).draw(at: CGPoint(x: margin + 70, y: y), withAttributes: valFont)
+        L10n.s("pdf_label_subject").draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
+        (data.subject.isEmpty ? L10n.s("pdf_default_subject") : data.subject).draw(at: CGPoint(x: margin + 70, y: y), withAttributes: valFont)
         y += 35
         
         // Notes Box
-        NSLocalizedString("pdf_label_remarks", comment: "").draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
+        L10n.s("pdf_label_remarks").draw(at: CGPoint(x: margin, y: y), withAttributes: labelFont)
         y += 20
         
         let notesRect = CGRect(x: margin, y: y, width: contentWidth, height: 260)
@@ -201,7 +201,7 @@ public final class PDFGenerator {
         context.setLineWidth(1)
         context.stroke(notesRect)
         
-        let notesText = data.notes.isEmpty ? NSLocalizedString("pdf_default_notes", comment: "") : data.notes
+        let notesText = data.notes.isEmpty ? L10n.s("pdf_default_notes") : data.notes
         let notesAttr: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 12, weight: .regular), .foregroundColor: UIColor.label]
         notesText.draw(in: notesRect.insetBy(dx: 12, dy: 12), withAttributes: notesAttr)
     }

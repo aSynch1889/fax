@@ -53,8 +53,8 @@ public struct HistoryListView: View {
                                         .font(.headline)
                                     
                                     Text(record.subject.isEmpty
-                                         ? String(format: NSLocalizedString("pages_count", comment: ""), record.pageCount)
-                                         : String(format: NSLocalizedString("subject_pages_format", comment: ""), record.subject, record.pageCount))
+                                         ? String(format: L10n.s("pages_count"), record.pageCount)
+                                         : String(format: L10n.s("subject_pages_format"), record.subject, record.pageCount))
                                         .font(.subheadline)
                                         .foregroundColor(.secondary)
                                     
@@ -103,7 +103,7 @@ public struct TransmissionDetailView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                     
-                    Text(String(format: NSLocalizedString("confirmation_code", comment: ""), record.confirmationCode))
+                    Text(String(format: L10n.s("confirmation_code"), record.confirmationCode))
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
@@ -113,12 +113,12 @@ public struct TransmissionDetailView: View {
                 
                 // Transmission Details
                 VStack(alignment: .leading, spacing: 14) {
-                    DetailRow(label: "recipient_name_label", value: record.recipient.name.isEmpty ? NSLocalizedString("direct_fax_line", comment: "") : record.recipient.name)
+                    DetailRow(label: "recipient_name_label", value: record.recipient.name.isEmpty ? L10n.s("direct_fax_line") : record.recipient.name)
                     DetailRow(label: "destination_number", value: record.recipient.formattedFullNumber)
                     DetailRow(label: "country_code", value: record.recipient.countryCode)
-                    DetailRow(label: "pages_transmitted", value: String(format: NSLocalizedString("pages_count", comment: ""), record.pageCount))
-                    DetailRow(label: "credits_consumed", value: String(format: NSLocalizedString("credits_count", comment: ""), record.creditsUsed))
-                    DetailRow(label: "duration", value: String(format: NSLocalizedString("seconds_count", comment: ""), record.transmissionDurationSeconds))
+                    DetailRow(label: "pages_transmitted", value: String(format: L10n.s("pages_count"), record.pageCount))
+                    DetailRow(label: "credits_consumed", value: String(format: L10n.s("credits_count"), record.creditsUsed))
+                    DetailRow(label: "duration", value: String(format: L10n.s("seconds_count"), record.transmissionDurationSeconds))
                     DetailRow(label: "sent_timestamp", value: DateFormatter.localizedString(from: record.sentDate, dateStyle: .medium, timeStyle: .medium))
                 }
                 .padding()

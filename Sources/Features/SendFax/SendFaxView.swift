@@ -130,12 +130,12 @@ public struct SendFaxView: View {
                             HStack {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(currentDocument.coverPage.subject.isEmpty
-                                         ? NSLocalizedString("cover_subject_none", comment: "")
-                                         : String(format: NSLocalizedString("cover_subject_format", comment: ""), currentDocument.coverPage.subject))
+                                         ? L10n.s("cover_subject_none")
+                                         : String(format: L10n.s("cover_subject_format"), currentDocument.coverPage.subject))
                                         .font(.subheadline)
                                     Text(currentDocument.coverPage.senderName.isEmpty
-                                         ? String(format: NSLocalizedString("from_format", comment: ""), NSLocalizedString("default_sender", comment: ""))
-                                         : String(format: NSLocalizedString("from_format", comment: ""), currentDocument.coverPage.senderName))
+                                         ? String(format: L10n.s("from_format"), L10n.s("default_sender"))
+                                         : String(format: L10n.s("from_format"), currentDocument.coverPage.senderName))
                                         .font(.caption)
                                         .foregroundColor(.secondary)
                                 }
@@ -161,7 +161,7 @@ public struct SendFaxView: View {
                             Text("documents_section")
                                 .font(.headline)
                             Spacer()
-                            Text(String(format: NSLocalizedString("pages_count", comment: ""), currentDocument.pages.count))
+                            Text(String(format: L10n.s("pages_count"), currentDocument.pages.count))
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
@@ -247,7 +247,7 @@ public struct SendFaxView: View {
                     // 4. Action Button & Cost Info
                     VStack(spacing: 12) {
                         if totalPages > 0 {
-                            Text(String(format: NSLocalizedString("credits_required", comment: ""), totalPages, totalPages))
+                            Text(String(format: L10n.s("credits_required"), totalPages, totalPages))
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
@@ -369,7 +369,7 @@ public struct DocumentsListView: View {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(doc.title)
                                         .font(.headline)
-                                    Text(String(format: NSLocalizedString("pages_count_date", comment: ""), doc.pages.count, DateFormatter.localizedString(from: doc.updatedAt, dateStyle: .short, timeStyle: .none)))
+                                    Text(String(format: L10n.s("pages_count_date"), doc.pages.count, DateFormatter.localizedString(from: doc.updatedAt, dateStyle: .short, timeStyle: .none)))
                                         .font(.caption)
                                         .foregroundColor(.secondary)
                                 }
@@ -394,7 +394,7 @@ public struct DocumentsListView: View {
             }
             .sheet(isPresented: $showingScanner) {
                 DocumentScannerRepresentable(onScanned: { images in
-                    var newDoc = FaxDocument(title: String(format: NSLocalizedString("scanned_doc_title", comment: ""), DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .short)))
+                    var newDoc = FaxDocument(title: String(format: L10n.s("scanned_doc_title"), DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .short)))
                     for img in images {
                         let fn = storage.savePageImage(img)
                         newDoc.pages.append(FaxPage(imageFileName: fn))

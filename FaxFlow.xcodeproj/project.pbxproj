@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A626BF8494A18B8C367C3F5 /* CoverPageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E59C97C62DA18D6A3BE7D3 /* CoverPageEditorView.swift */; };
+		1F7291A3F9E530E342B8A0B4 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD530D2881D111081489CFC /* LanguageManager.swift */; };
 		20E5EE98C667BBA1C57A655D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CEE8C55A69E87E63D6A264D3 /* Localizable.xcstrings */; };
 		3466C83BFA2F4243F3406139 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F0A6016152878A6A88651 /* PDFGenerator.swift */; };
 		3B70EF8090F7C97AFC3B0A26 /* FaxTransmissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D205297BB02123B2F0976 /* FaxTransmissionService.swift */; };
@@ -20,6 +21,7 @@
 		5E0162D4638282E49C5D779D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA974FF915D64DE95334F86D /* AppTheme.swift */; };
 		7896FB24418D91B08D303E66 /* DocumentScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EACCF73031B6BB0F25F1E5 /* DocumentScannerCoordinator.swift */; };
 		87BC457547ACEE39BEBECA8C /* ImageFilterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA814AEDDC98CFFEBD7A9D40 /* ImageFilterUtility.swift */; };
+		8CDE23551BFE4582220FA341 /* LanguageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0E6CF714283EFD04E2345 /* LanguageSettingsView.swift */; };
 		8E34A2C311C03804D3B68C55 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42A260F60AC9E561B706F9 /* HistoryListView.swift */; };
 		8EA193DCCE48F12391413AF1 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854B9CF1AF14088391C4C876 /* StoreManager.swift */; };
 		94643108B10CEFBEE9CE1700 /* DocumentEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B2D0A5739A2A7BAF84E262 /* DocumentEditorView.swift */; };
@@ -52,13 +54,15 @@
 		B2EACCF73031B6BB0F25F1E5 /* DocumentScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerCoordinator.swift; sourceTree = "<group>"; };
 		CA814AEDDC98CFFEBD7A9D40 /* ImageFilterUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilterUtility.swift; sourceTree = "<group>"; };
 		CEE8C55A69E87E63D6A264D3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		D3E8DAEB56EC778D158938D8 /* FaxFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaxFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E8DAEB56EC778D158938D8 /* FaxFlow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FaxFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46AF21652EB648470B4B700 /* SendFaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFaxView.swift; sourceTree = "<group>"; };
 		DA974FF915D64DE95334F86D /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		DC42A260F60AC9E561B706F9 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		DD68E78C8F4126CAAF514377 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DFD530D2881D111081489CFC /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		E66ED91F6DF046EF38B67042 /* FaxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxModels.swift; sourceTree = "<group>"; };
 		F06BCD2D603CF6811999B67B /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		F2F0E6CF714283EFD04E2345 /* LanguageSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -81,6 +85,7 @@
 		36474605BE8FDE75E732EB6F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F2F0E6CF714283EFD04E2345 /* LanguageSettingsView.swift */,
 				A35D14280A1DC8EFB949416E /* SettingsView.swift */,
 			);
 			path = Settings;
@@ -178,6 +183,7 @@
 			children = (
 				DD68E78C8F4126CAAF514377 /* AppState.swift */,
 				1652286DDB0DC5D310F17B42 /* FaxApp.swift */,
+				DFD530D2881D111081489CFC /* LanguageManager.swift */,
 				0407A62E0CF3D6A540954B75 /* MainTabView.swift */,
 			);
 			path = App;
@@ -300,6 +306,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					D52B0D2BA5E60250261ABCB9 = {
+						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -357,6 +364,8 @@
 				3B70EF8090F7C97AFC3B0A26 /* FaxTransmissionService.swift in Sources */,
 				8E34A2C311C03804D3B68C55 /* HistoryListView.swift in Sources */,
 				87BC457547ACEE39BEBECA8C /* ImageFilterUtility.swift in Sources */,
+				1F7291A3F9E530E342B8A0B4 /* LanguageManager.swift in Sources */,
+				8CDE23551BFE4582220FA341 /* LanguageSettingsView.swift in Sources */,
 				44532DECE62529894BD44375 /* MainTabView.swift in Sources */,
 				3466C83BFA2F4243F3406139 /* PDFGenerator.swift in Sources */,
 				F6EE9B7A46146192F5A02D35 /* PaywallView.swift in Sources */,
@@ -377,7 +386,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = R9TC286V25;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -459,7 +467,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = R9TC286V25;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
