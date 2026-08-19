@@ -169,16 +169,11 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) SCREENSHOT_MODE"
 
 **现状**
 
-- 规则要求独立 GitHub 仓库 + Pages；本仓只有 `PrivacyDocs/` 三页 HTML + 一行 README。
-- App 链接指向 `bpmob.com`，法律主体、数据说明都对不上 `com.evolly.faxflow`。
-- Face ID、相机、相册、文档（可能含病历/合同）的数据处理未在政策中按本 App 描述。
-
-**方案**
-
-- 新建独立 privacy 仓库，部署 Pages。
-- 写清：收集什么（无则声明）、传真内容是否上传、保存多久、第三方网关、IAP 由 Apple 处理。
-- 替换 App 内全部法律链接。
-- 若内容上传网关，必须更新 App Privacy 问卷（照片、敏感文档）。
+- 独立公开仓库：[aSynch1889/faxflow-privacy](https://github.com/aSynch1889/faxflow-privacy)
+- GitHub Pages：https://asynch1889.github.io/faxflow-privacy/ （privacy.html / terms.html）
+- App 设置与付费墙已改为上述链接，不再指向 `bpmob.com`。
+- 政策已说明：本地存储、发送时传给网关、IAP 由 Apple 处理、Face ID 留在设备。
+- 若内容上传生产网关，仍须更新 App Privacy 问卷（照片、敏感文档）。
 
 ---
 

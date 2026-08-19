@@ -1,1 +1,56 @@
-<html><body><h1>Privacy Policy</h1><p>FaxFlow respects and protects your confidentiality.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FaxFlow — Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow"><a href="index.html">FaxFlow Legal</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: August 20, 2026</p>
+    <p>This policy describes how the FaxFlow iOS application (“FaxFlow”, “we”) handles information. FaxFlow is designed so that documents, contacts, and transmission history stay on your device unless you choose to send a fax.</p>
+
+    <h2>1. Data we store on your device</h2>
+    <p>FaxFlow stores the following locally using on-device persistence (for example SwiftData / UserDefaults):</p>
+    <ul>
+      <li>Documents you scan or import, including images and generated PDFs</li>
+      <li>Cover pages, signatures, and related editor state</li>
+      <li>Recipient phone numbers and contact records you create in the app</li>
+      <li>Send history, page counts, and local transmission status</li>
+      <li>Appearance, language, Face ID lock preference, and remaining page-balance state</li>
+    </ul>
+    <p>We do not operate a FaxFlow user account. We do not run a FaxFlow cloud that stores your document contents for you.</p>
+
+    <h2>2. Camera, photos, and files</h2>
+    <p>If you grant access, FaxFlow uses the camera and photo/file pickers so you can scan or attach pages. Images remain on the device unless you start a fax send. FaxFlow does not upload your photo library in the background.</p>
+
+    <h2>3. Sending a fax</h2>
+    <p>When you send a fax, the pages, cover sheet (if any), and destination number must be transmitted to a fax gateway so the call can be completed. Only the data needed to deliver that fax is sent for that request. Delivery logs shown in the app are stored locally.</p>
+    <p>If a production gateway is enabled in a future release, that provider’s processing of the transmission is subject to their own terms. Until a live gateway is configured, the app may simulate send status on-device.</p>
+
+    <h2>4. Purchases</h2>
+    <p>Page packs and related in-app purchases are processed by Apple through StoreKit. Apple provides us with purchase and entitlement status (for example product identifiers and transaction IDs). We do not receive your full payment card number. Restore purchases uses Apple’s account on the device.</p>
+
+    <h2>5. Analytics, advertising, and tracking</h2>
+    <p>FaxFlow does not include third-party advertising SDKs and does not sell personal information. We do not use your documents for advertising.</p>
+
+    <h2>6. Face ID / device lock</h2>
+    <p>The optional lock uses the system LocalAuthentication APIs. Biometric templates stay on the device and are not sent to us.</p>
+
+    <h2>7. Children</h2>
+    <p>FaxFlow is not directed to children under 13 (or the equivalent age in your region).</p>
+
+    <h2>8. Retention and deletion</h2>
+    <p>Local data remains until you delete items in the app or remove the app from the device. Uninstalling FaxFlow deletes on-device app data.</p>
+
+    <h2>9. Changes</h2>
+    <p>We may update this policy. The “Last updated” date at the top will change when we do.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions about this policy: open an issue on the <a href="https://github.com/aSynch1889/faxflow-privacy">faxflow-privacy</a> repository.</p>
+  </main>
+</body>
+</html>

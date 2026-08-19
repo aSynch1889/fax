@@ -154,12 +154,12 @@ public struct PaywallView: View {
                         Text("•")
                             .foregroundColor(.secondary)
                         
-                        Link("privacy_policy", destination: URL(string: "https://bpmob.com/fax/privacy/")!)
+                        Link("privacy_policy", destination: URL(string: "https://asynch1889.github.io/faxflow-privacy/privacy.html")!)
                         
                         Text("•")
                             .foregroundColor(.secondary)
                         
-                        Link("terms_of_use", destination: URL(string: "https://bpmob.com/fax/terms/")!)
+                        Link("terms_of_use", destination: URL(string: "https://asynch1889.github.io/faxflow-privacy/terms.html")!)
                     }
                     .font(.caption)
                     .foregroundColor(.secondary)

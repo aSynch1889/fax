@@ -97,11 +97,11 @@ public struct SettingsView: View {
                         Label("restore_purchases", systemImage: "arrow.clockwise")
                     }
                     
-                    Link(destination: URL(string: "https://bpmob.com/fax/privacy/")!) {
+                    Link(destination: URL(string: "https://asynch1889.github.io/faxflow-privacy/privacy.html")!) {
                         Label("privacy_policy", systemImage: "hand.raised.fill")
                     }
                     
-                    Link(destination: URL(string: "https://bpmob.com/fax/terms/")!) {
+                    Link(destination: URL(string: "https://asynch1889.github.io/faxflow-privacy/terms.html")!) {
                         Label("terms_of_use", systemImage: "doc.text.fill")
                     }
                     

@@ -9,7 +9,7 @@
 - PDFKit Compiler: Multi-page PDF + Receipt Engine (PASS)
 - PencilKit Signature: Hand-drawn E-Signatures (PASS)
 - Dark & Light Mode: Semantic Colors + In-App Appearance Switcher (PASS)
-- Privacy Web Deployment: Standalone GitHub Pages Structure (PASS)
+- Privacy Web Deployment: Public repo aSynch1889/faxflow-privacy + GitHub Pages (PASS) https://asynch1889.github.io/faxflow-privacy/
 - Screenshot Mock Mode: Automated Screenshot Data Injection (PASS)
 
 ## 2. Compilation Record

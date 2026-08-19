@@ -19,7 +19,7 @@ iPhone 与 iPad 上的现代传真应用，使用 SwiftUI、VisionKit、PDFKit �
 | `Supporting Files/` | Info.plist |
 | `Docs/` | 需求、架构、模块与进度文档 |
 | `Metadata/` | App Store / 内购元数据模板 |
-| `PrivacyDocs/` | 隐私政策与用户协议页面（可部署到独立仓库的 GitHub Pages） |
+| `PrivacyDocs/` | 隐私政策与用户协议源文件。独立仓库：[aSynch1889/faxflow-privacy](https://github.com/aSynch1889/faxflow-privacy)，Pages：https://asynch1889.github.io/faxflow-privacy/ |
 | `project.yml` | XcodeGen 工程定义 |
 
 更完整的说明见 [Docs/README.md](Docs/README.md)。架构见 [Docs/ARCHITECTURE.md](Docs/ARCHITECTURE.md)。
